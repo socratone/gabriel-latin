@@ -1,0 +1,19 @@
+@import '../config/layout.scss';
+
+.screen {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+}
+
+.screenBumper {
+  flex-shrink: 0;
+  height: $header-height;
+}
+
+.main {
+  flex-grow: 1;
+}
