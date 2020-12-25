@@ -10,27 +10,13 @@ const Nav = () => {
           Gabriel Institutum Latinitatis
         </div>
         <div className={styles.bottomNav}>
-          <li className={styles.li}>
-            <Link to="/">Home</Link>
-          </li>
-          <li className={styles.li}>
-            <Link to="/llpsi">LLPSI</Link>
-          </li>
-          <li className={styles.li}>
-            <Link to="/courses/regular">Regular Courses</Link>
-          </li>
-          <li className={styles.li}>
-            <Link to="/courses/private">Private Courses</Link>
-          </li>
-          <li className={styles.li}>
-            <Link to="/exams">Exams</Link>
-          </li>
-          <li className={styles.li}>
-            <Link to="/fnq">F&Q</Link>
-          </li>
-          <li className={styles.li}>
-            <Link to="/more">More</Link>
-          </li>
+          <Link to="/" className={styles.li}>Home</Link>
+          <Link to="/llpsi" className={styles.li}>LLPSI</Link>
+          <Link to="/courses/regular" className={styles.li}>Regular Courses</Link>
+          <Link to="/courses/private" className={styles.li}>Private Courses</Link>
+          <Link to="/exams" className={styles.li}>Exams</Link>
+          <Link to="/fnq" className={styles.li}>F&Q</Link>
+          <Link to="/more" className={styles.li}>More</Link>
         </div>
       </nav>
     </header>
