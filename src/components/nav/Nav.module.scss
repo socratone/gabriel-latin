@@ -6,7 +6,7 @@
   top: 0;
   width: 100vw;
   height: $header-height;
-  background-color: rgb(179, 148, 113);
+  background-color: #988269;
   box-shadow: 0 10px 20px rgba(0,0,0,0.1), 0 6px 6px rgba(0,0,0,0.12);
 }
 
@@ -37,6 +37,6 @@
   font-size: 16px;
 
   &:hover {
-    color: rgb(243, 202, 152);
+    color: rgba(255, 255, 255, 0.726);
   }
 }
