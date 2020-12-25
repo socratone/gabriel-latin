@@ -2,9 +2,9 @@ import React from 'react';
 
 const Fnq = () => {
   return (  
-    <div>
+    <main>
       F & Q
-    </div>
+    </main>
   );
 }
  

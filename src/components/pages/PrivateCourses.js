@@ -2,9 +2,9 @@ import React from 'react';
 
 const PrivateCourses = () => {
   return (  
-    <div>
+    <main>
       프라이빗
-    </div>
+    </main>
   );
 }
  

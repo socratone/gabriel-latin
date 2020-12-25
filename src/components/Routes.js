@@ -20,31 +20,29 @@ const Routes = () => {
       <Nav />
       <div className={styles.screen}>
         <div className={styles.screenBumper}></div>
-        <main className={styles.main}>
-          <Switch>
-            <Route path="/llpsi">
-              <Llpsi />
-            </Route>
-            <Route path="/courses/regular">
-              <RegularCourses />
-            </Route>
-            <Route path="/courses/private">
-              <PrivateCourses />
-            </Route>
-            <Route path="/exams">
-              <Exams />
-            </Route>
-            <Route path="/fnq">
-              <Fnq />
-            </Route>
-            <Route path="/more">
-              <More />
-            </Route>
-            <Route path="/">
-              <Home />
-            </Route>
-          </Switch>
-        </main>
+        <Switch>
+          <Route path="/llpsi">
+            <Llpsi />
+          </Route>
+          <Route path="/courses/regular">
+            <RegularCourses />
+          </Route>
+          <Route path="/courses/private">
+            <PrivateCourses />
+          </Route>
+          <Route path="/exams">
+            <Exams />
+          </Route>
+          <Route path="/fnq">
+            <Fnq />
+          </Route>
+          <Route path="/more">
+            <More />
+          </Route>
+          <Route path="/">
+            <Home />
+          </Route>
+        </Switch>
       </div>
     </Router>
   );

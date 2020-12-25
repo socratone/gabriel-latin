@@ -2,9 +2,9 @@ import React from 'react';
 
 const RegularCourses = () => {
   return (  
-    <div>
+    <main>
       레귤러 사이즈
-    </div>
+    </main>
   );
 }
  

@@ -2,9 +2,9 @@ import React from 'react';
 
 const Llpsi = () => {
   return (  
-    <div>
+    <main>
       Llpsi
-    </div>
+    </main>
   );
 }
  

@@ -2,9 +2,9 @@ import React from 'react';
 
 const More = () => {
   return (  
-    <div>
+    <main>
       모어모어
-    </div>
+    </main>
   );
 }
  
