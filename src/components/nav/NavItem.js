@@ -4,34 +4,31 @@ import { useDispatch, useSelector } from 'react-redux';
 import { setFontColor } from '../../store/nav';
 import styles from './NavItem.module.scss';
 
-const NavItem = ({ to, home, subItems, children }) => {
-  const [isDropdown, setDropdown] = useState(false);
+const NavItem = ({ to, home, subItems, subItemsWidth, children }) => {
   const color = useSelector(state => state.ui.nav.color);
   const dispatch = useDispatch();
 
-  const converFontColor = () => {
+  const convertFontColor = () => {
     if (home) dispatch(setFontColor({ color: 'white' }));
-    else dispatch(setFontColor({ color: 'black' }));
+    else dispatch(setFontColor({ color: '#707070' }));
   };
-
-  const showDropdown = () => {
-    setDropdown(true);
-  }; 
 
   return (  
     <div className={styles.wrap}>
       <Link 
         to={to} 
-        onClick={converFontColor} 
-        onMouseEnter={showDropdown} 
+        onClick={convertFontColor} 
+        className={styles.item}
         style={{ color }}
       >
         {children}
       </Link>
-      {isDropdown && subItems && <ul className={styles.dropdown}>
+      {subItems && <ul 
+        className={styles.dropdown}
+        style={{ width: subItemsWidth }}
+      >
         {subItems}
-      </ul>}
-      
+      </ul>}    
     </div>
   );
 }

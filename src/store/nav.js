@@ -3,7 +3,7 @@ import { createSlice } from '@reduxjs/toolkit';
 const slice = createSlice({
   name: 'nav',
   initialState: {
-    color: 'white'
+    color: '#707070'
   },
   reducers: {
     setFontColor: (state, action) => {

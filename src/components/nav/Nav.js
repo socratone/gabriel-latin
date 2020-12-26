@@ -7,22 +7,38 @@ const Nav = () => {
   return (  
     <header className={styles.header}>
       <nav className={styles.nav}>
-        <NavItem to="/" home>Home</NavItem>
-        <NavItem 
-          to="/llpsi"
-          subItems={[
-            <NavSubItem key="1">방가워요1</NavSubItem>, 
-            <NavSubItem key="2">방가워요2</NavSubItem>
-          ]}
-        >
+        <NavItem to="/" home>
+          Home
+        </NavItem>
+        <NavItem to="/llpsi">
           LLPSI
         </NavItem>
-        <NavItem to="/courses/regular">Regular Courses</NavItem>
-        <NavItem to="/courses/private">Private Courses</NavItem>
-        <NavItem to="/exams">Exams</NavItem>
-        <NavItem to="/fnq">F&Q</NavItem>
+        <NavItem to="/courses/regular">
+          Regular Courses
+        </NavItem>
+        <NavItem to="/courses/private">
+          Private Courses
+        </NavItem>
         <NavItem 
-          to="/more" 
+          to="/exams"
+          subItems={[
+            <NavSubItem to="/" key="1">National Latin Exam</NavSubItem>, 
+            <NavSubItem to="/" key="2">National Greek Exam</NavSubItem>
+          ]}
+          subItemsWidth="160px"
+        >
+          Exams
+        </NavItem>
+        <NavItem to="/fnq">
+          F&Q
+        </NavItem>
+        <NavItem 
+          to="/more"
+          subItems={[
+            <NavSubItem to="/" key="1">Resources</NavSubItem>, 
+            <NavSubItem to="/" key="2">Book Reviews</NavSubItem>
+          ]} 
+          subItemsWidth="300px"
         >
           More
         </NavItem>
