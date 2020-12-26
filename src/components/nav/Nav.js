@@ -1,23 +1,26 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { useDispatch } from 'react-redux';
+import { setFontColor } from '../../store/nav';
 import styles from './Nav.module.scss';
+import NavItem from './NavItem';
 
 const Nav = () => {
+  const dispatch = useDispatch();
+
+  const converFontColor = color => {
+    dispatch(setFontColor({ color }));
+  }
+
   return (  
     <header className={styles.header}>
       <nav className={styles.nav}>
-        <div className={styles.topNav}>
-          Gabriel Institutum Latinitatis
-        </div>
-        <div className={styles.bottomNav}>
-          <Link to="/" className={styles.li}>Home</Link>
-          <Link to="/llpsi" className={styles.li}>LLPSI</Link>
-          <Link to="/courses/regular" className={styles.li}>Regular Courses</Link>
-          <Link to="/courses/private" className={styles.li}>Private Courses</Link>
-          <Link to="/exams" className={styles.li}>Exams</Link>
-          <Link to="/fnq" className={styles.li}>F&Q</Link>
-          <Link to="/more" className={styles.li}>More</Link>
-        </div>
+        <NavItem to="/" onClick={() => converFontColor('white')}>Home</NavItem>
+        <NavItem to="/llpsi" onClick={() => converFontColor('black')}>LLPSI</NavItem>
+        <NavItem to="/courses/regular" onClick={() => converFontColor('black')}>Regular Courses</NavItem>
+        <NavItem to="/courses/private" onClick={() => converFontColor('black')}>Private Courses</NavItem>
+        <NavItem to="/exams" onClick={() => converFontColor('black')}>Exams</NavItem>
+        <NavItem to="/fnq" onClick={() => converFontColor('black')}>F&Q</NavItem>
+        <NavItem to="/more" onClick={() => converFontColor('black')}>More</NavItem>
       </nav>
     </header>
   );

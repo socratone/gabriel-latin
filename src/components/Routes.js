@@ -4,6 +4,7 @@ import {
   Switch,
   Route
 } from "react-router-dom";
+import HeaderBumper from './common/HeaderBumper';
 import Nav from './nav/Nav';
 import Exams from './pages/Exams';
 import Fnq from './pages/Fnq';
@@ -18,25 +19,30 @@ const Routes = () => {
   return (  
     <Router>
       <Nav />
-      <div className={styles.screen}>
-        <div className={styles.screenBumper}></div>
+      <div className={styles.mainWrap}>
         <Switch>
           <Route path="/llpsi">
+            <HeaderBumper />
             <Llpsi />
           </Route>
           <Route path="/courses/regular">
+            <HeaderBumper />
             <RegularCourses />
           </Route>
           <Route path="/courses/private">
+            <HeaderBumper />
             <PrivateCourses />
           </Route>
           <Route path="/exams">
+            <HeaderBumper />
             <Exams />
           </Route>
           <Route path="/fnq">
+            <HeaderBumper />
             <Fnq />
           </Route>
           <Route path="/more">
+            <HeaderBumper />
             <More />
           </Route>
           <Route path="/">

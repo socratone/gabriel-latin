@@ -6,37 +6,12 @@
   top: 0;
   width: 100vw;
   height: $header-height;
-  background-color: #988269;
-  box-shadow: 0 10px 20px rgba(0,0,0,0.1), 0 6px 6px rgba(0,0,0,0.12);
+  // background-color: #988269;
 }
 
 .nav {
-  margin: 0 50px;
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-}
-
-.topNav {
-  font-size: 24px;
-  color: white;
-  padding: 8px 0;
-}
-
-.bottomNav {
+  padding: 0 50px;
   display: flex;
   justify-content: space-between;
   height: 100%;
-}
-
-.li {
-  display: flex;
-  align-items: center;
-  height: 100%;
-  color: white;
-  font-size: 16px;
-
-  &:hover {
-    color: rgba(255, 255, 255, 0.726);
-  }
 }
