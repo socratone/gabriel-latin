@@ -5,7 +5,7 @@ import styles from './Nav.module.scss';
 
 const Nav = () => {
   return (  
-    <header className={styles.header}>
+    <header className={styles.wrap}>
       <nav className={styles.nav}>
         <NavItem to="/" home>
           Home

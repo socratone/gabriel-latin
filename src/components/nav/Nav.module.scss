@@ -1,17 +1,15 @@
 @import '../common/layout.scss';
 
-.header {
+.wrap {
   z-index: 1;
   position: fixed;
   top: 0;
   width: 100vw;
   height: $header-height;
-  // background-color: #988269;
 }
 
 .nav {
-  padding: 0 50px;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   height: 100%;
 }
