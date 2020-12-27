@@ -1,9 +1,9 @@
 import React from 'react';
 import { useDispatch } from 'react-redux';
 import { toggleMenuButton } from '../../store/nav';
-import styles from './RightNav.module.scss';
 import RightNavItem from './RightNavItem';
 import XButton from './XButton';
+import styles from './RightNav.module.scss';
 
 const RightNav = () => {
   const dispatch = useDispatch();
