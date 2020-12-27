@@ -9,6 +9,7 @@ const Home = () => {
 
   useEffect(() => {
     dispatch(setFontColor({ color: 'white' }));
+    return () => dispatch(setFontColor({ color: '#707070' }));
   }, []);
 
   return (  
