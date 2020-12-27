@@ -13,3 +13,15 @@
   justify-content: space-evenly;
   height: 100%;
 }
+
+@media (max-width: 800px) {
+  .wrap {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  
+  .nav {
+    display: none;
+  }
+}
