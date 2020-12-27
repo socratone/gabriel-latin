@@ -4,7 +4,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { setFontColor } from '../../store/nav';
 import styles from './NavItem.module.scss';
 
-const NavItem = ({ to, home, subItems, subItemsWidth, children }) => {
+const NavItem = ({ to, home, subItems, subItemsWidth, right, children }) => {
   const color = useSelector(state => state.ui.nav.color);
   const dispatch = useDispatch();
 
@@ -25,7 +25,10 @@ const NavItem = ({ to, home, subItems, subItemsWidth, children }) => {
       </Link>
       {subItems && <ul 
         className={styles.dropdown}
-        style={{ width: subItemsWidth }}
+        style={{ 
+          width: subItemsWidth,
+          right: right ? 0 : undefined
+        }}
       >
         {subItems}
       </ul>}    

@@ -20,7 +20,7 @@
 
 .dropdown {
   position: absolute;
-  top: $header-height;
+  top: $header-height - 12px;
   padding: 8px;
   display: none;
   flex-direction: column;

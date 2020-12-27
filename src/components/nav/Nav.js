@@ -38,7 +38,8 @@ const Nav = () => {
             <NavSubItem to="/" key="1">Resources</NavSubItem>, 
             <NavSubItem to="/" key="2">Book Reviews</NavSubItem>
           ]} 
-          subItemsWidth="300px"
+          subItemsWidth="112px"
+          right
         >
           More
         </NavItem>
