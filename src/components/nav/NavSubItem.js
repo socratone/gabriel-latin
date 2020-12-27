@@ -4,9 +4,11 @@ import styles from './NavSubItem.module.scss';
 
 const NavSubItem = ({ to, children }) => {
   return (  
-    <Link to={to} className={styles.item}>
-      {children}
-    </Link>
+    <li className={styles.wrap}>
+      <Link to={to} className={styles.item}>
+        {children}
+      </Link>
+    </li>
   );
 }
  
