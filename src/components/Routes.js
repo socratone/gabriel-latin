@@ -20,29 +20,24 @@ const Routes = () => {
     <Router>
       <Nav />
       <div className={styles.mainWrap}>
+        <HeaderBumper />
         <Switch>
           <Route path="/llpsi">
-            <HeaderBumper />
             <Llpsi />
           </Route>
           <Route path="/courses/regular">
-            <HeaderBumper />
             <RegularCourses />
           </Route>
           <Route path="/courses/private">
-            <HeaderBumper />
             <PrivateCourses />
           </Route>
           <Route path="/exams">
-            <HeaderBumper />
             <Exams />
           </Route>
           <Route path="/fnq">
-            <HeaderBumper />
             <Fnq />
           </Route>
           <Route path="/more">
-            <HeaderBumper />
             <More />
           </Route>
           <Route path="/">
