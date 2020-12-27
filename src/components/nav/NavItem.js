@@ -4,14 +4,14 @@ import { useDispatch, useSelector } from 'react-redux';
 import styles from './NavItem.module.scss';
 
 const NavItem = ({ to, home, subItems, subItemsWidth, right, children }) => {
-  const color = useSelector(state => state.ui.nav.color);
+  const { color, fontWeight } = useSelector(state => state.ui.nav.font);
 
   return (  
     <div className={styles.wrap}>
       <Link 
         to={to} 
         className={styles.item}
-        style={{ color }}
+        style={{ color, fontWeight }}
       >
         {children}
       </Link>

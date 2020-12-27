@@ -3,14 +3,17 @@ import { createSlice } from '@reduxjs/toolkit';
 const slice = createSlice({
   name: 'nav',
   initialState: {
-    color: '#707070'
+    font: {
+      color: '#707070'
+    }
   },
   reducers: {
-    setFontColor: (state, action) => {
-      state.color = action.payload.color;
+    setFont: (state, action) => {
+      state.font.color = action.payload.color;
+      state.font.fontWeight = action.payload.fontWeight;
     }
   }
 });
 
-export const { setFontColor } = slice.actions;
+export const { setFont } = slice.actions;
 export default slice.reducer;
