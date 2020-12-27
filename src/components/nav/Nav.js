@@ -7,7 +7,7 @@ const Nav = () => {
   return (  
     <header className={styles.wrap}>
       <nav className={styles.nav}>
-        <NavItem to="/" home>
+        <NavItem to="/">
           Home
         </NavItem>
         <NavItem to="/llpsi">
