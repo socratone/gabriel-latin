@@ -21,16 +21,28 @@ const Nav = () => {
         <NavItem to="/courses/regular">
           Regular Courses
         </NavItem>
-        <NavItem to="/courses/private">
+        <NavItem 
+          to="/courses/private"
+          subItems={[
+            <NavSubItem to="/" key="1">GPA SAT II AP</NavSubItem>, 
+            <NavSubItem to="/" key="2">LLPSI</NavSubItem>,
+            <NavSubItem to="/" key="3">Athenaze</NavSubItem>
+          ]}
+          subItemsWidth="112px"
+        >
           Private Courses
         </NavItem>
         <NavItem 
           to="/exams"
           subItems={[
             <NavSubItem to="/" key="1">National Latin Exam</NavSubItem>, 
-            <NavSubItem to="/" key="2">National Greek Exam</NavSubItem>
+            <NavSubItem to="/" key="2">National Greek Exam</NavSubItem>,
+            <NavSubItem to="/" key="3">National Mythology Exam</NavSubItem>,
+            <NavSubItem to="/" key="4">National Classical Etymology Exam</NavSubItem>,
+            <NavSubItem to="/" key="5">National Roman Civilaziation Exam</NavSubItem>,
+            <NavSubItem to="/" key="6">National Latin Vocabulary Exam</NavSubItem>
           ]}
-          subItemsWidth="160px"
+          subItemsWidth="248px"
         >
           Exams
         </NavItem>
