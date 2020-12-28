@@ -1,6 +1,6 @@
 import React from 'react';
 import { useDispatch } from 'react-redux';
-import { toggleMenuButton } from '../../store/nav';
+import { toggleMenuButton } from '../../store/reducers/nav';
 import RightNavItem from './RightNavItem';
 import XButton from './XButton';
 import styles from './RightNav.module.scss';
