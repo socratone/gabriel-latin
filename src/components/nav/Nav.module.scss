@@ -6,22 +6,28 @@
   top: 0;
   width: 100vw;
   height: $header-height;
-}
-
-.nav {
   display: flex;
-  justify-content: space-evenly;
-  height: 100%;
-}
+  justify-content: center;
 
-@media (max-width: 800px) {
-  .wrap {
+  @media (max-width: 800px) {
     display: flex;
     justify-content: flex-end;
     align-items: center;
   }
-  
-  .nav {
+}
+
+.nav {
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+  width: 100%;
+
+  @media (min-width: 1000px) {
+    width: 1000px;
+  }
+
+  @media (max-width: 800px) {
     display: none;
   }
 }
