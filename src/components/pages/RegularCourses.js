@@ -3,11 +3,11 @@ import PageFrame from '../common/PageFrame';
 
 const RegularCourses = () => {
   return (  
-    <main>
-      <PageFrame>
+    <PageFrame>
+      <main>
         레귤러 사이즈
-      </PageFrame>
-    </main>
+      </main>
+    </PageFrame>
   );
 }
  
