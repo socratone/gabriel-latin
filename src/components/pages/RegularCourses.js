@@ -1,9 +1,12 @@
 import React from 'react';
+import PageFrame from '../common/PageFrame';
 
 const RegularCourses = () => {
   return (  
     <main>
-      레귤러 사이즈
+      <PageFrame>
+        레귤러 사이즈
+      </PageFrame>
     </main>
   );
 }

@@ -1,0 +1,14 @@
+.frameWrap {
+  display: flex;
+  justify-content: center;
+}
+
+.frame {
+  background: dodgerblue;
+  width: 1200px;
+  padding: 0 20px;
+
+  @media (max-width: 1000px) {
+    width: 100%;
+  }
+}
