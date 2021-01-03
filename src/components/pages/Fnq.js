@@ -1,10 +1,13 @@
 import React from 'react';
+import PageFrame from '../common/PageFrame';
 
 const Fnq = () => {
   return (  
-    <main>
-      F & Q
-    </main>
+    <PageFrame>
+      <main>
+        F & Q
+      </main>
+    </PageFrame>
   );
 }
  

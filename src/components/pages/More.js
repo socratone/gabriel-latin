@@ -1,10 +1,13 @@
 import React from 'react';
+import PageFrame from '../common/PageFrame';
 
 const More = () => {
   return (  
-    <main>
-      모어모어
-    </main>
+    <PageFrame>
+      <main>
+        모어모어
+      </main>
+    </PageFrame>
   );
 }
  
