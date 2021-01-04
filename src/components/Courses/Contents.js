@@ -27,7 +27,8 @@ const Contents = ({ items }) => {
           <div className={styles.description}>
             {convertTextToJSX(items[index].description)}
           </div>
-          <a className={styles.detailButton}>자세히 보기</a>
+          <a className={styles.button}>자세히 보기</a>
+          <a className={styles.button}>수강 신청하기</a>
         </div>
       </div>
     </section>
