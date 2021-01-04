@@ -8,10 +8,11 @@
   height: $header-height;
   display: flex;
   justify-content: center;
-  background: white;
+  background: #ffffffef;
   border-bottom: 1px solid gainsboro;
 
   @media (max-width: 800px) {
+    height: $header-height-mobile;
     display: flex;
     justify-content: flex-end;
     align-items: center;
