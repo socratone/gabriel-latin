@@ -1,10 +1,11 @@
 import styled from 'styled-components';
 
-const HEADER_HEIGHT_MOBILE = '40px'
+const HEADER_HEIGHT = '60px'
+const HEADER_HEIGHT_MOBILE = '50px'
 
 const HeaderBumper = styled.section`
   flex-shrink: 0;
-  height: 60px;
+  height: ${HEADER_HEIGHT};
 
   @media (max-width: 800px) {
     height: ${HEADER_HEIGHT_MOBILE};
