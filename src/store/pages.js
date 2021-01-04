@@ -1,8 +1,6 @@
 import { combineReducers } from 'redux';
-import nav from './reducers/nav';
-import pages from './pages';
+import regularCourse from './reducers/regularCourse';
 
 export default combineReducers({
-  nav,
-  pages
+  regularCourse
 });

@@ -1,0 +1,46 @@
+@import '../common/color.scss';
+
+.wrap {
+  margin: 80px 0;
+}
+
+.nav {
+  display: flex;
+  border-bottom: 1px solid gainsboro;
+}
+
+.item {
+  margin: 40px 0 0 0;
+  display: flex;
+}
+
+.imageWrap {
+  flex-shrink: 0;
+  margin-right: 20px;
+}
+
+.image {
+  width: 200px;
+}
+
+.texts {
+  width: 100%;
+}
+
+.title {
+  color: $blue;
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin: 20px 0;
+}
+
+.description {
+  line-height: 2;
+  margin: 16px 0;
+}
+
+.detailButton {
+  display: block;
+  color: $blue;
+  cursor: pointer;
+}
