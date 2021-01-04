@@ -13,7 +13,7 @@ const Nav = () => {
     <header className={styles.wrap}>
       <div className={styles.navWrap}>
         <div className={styles.titleWrap}>
-          <p className={styles.title}>GABRIEL INSTITUTUM LATINITATIS</p>
+          <p className={styles.title}>Gabriel Institutum Latinitatis</p>
         </div>
         <nav className={styles.nav}>
           <NavItem to="/">
