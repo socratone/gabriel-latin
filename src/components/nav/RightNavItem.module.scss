@@ -1,0 +1,26 @@
+.wrap {
+  border-bottom: 1px solid whitesmoke;
+  display: flex;
+  justify-content: space-between;
+}
+
+.item {
+  display: inline-block;
+  color: #707070;
+  padding: 10px 0;
+  cursor: pointer;
+
+  &:hover {
+    color: black;
+  }
+}
+
+.arrowWrap {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.arrow {
+  transform: rotate(-90deg);
+}
