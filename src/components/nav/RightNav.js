@@ -2,7 +2,6 @@ import React from 'react';
 import { useDispatch } from 'react-redux';
 import { toggleMenuButton } from '../../store/reducers/nav';
 import RightNavItem from './RightNavItem';
-import XButton from './XButton';
 import styles from './RightNav.module.scss';
 
 const RightNav = () => {
@@ -16,7 +15,6 @@ const RightNav = () => {
     <div className={styles.wrap}>
       <div className={styles.margin} onClick={handleClick} />
       <nav className={styles.nav}>
-        <XButton onClick={handleClick} />
         <RightNavItem to="/">
           Home
         </RightNavItem>
