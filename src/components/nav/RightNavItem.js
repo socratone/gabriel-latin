@@ -1,22 +1,31 @@
 import React from 'react';
 import { useDispatch } from 'react-redux';
-import { Link } from 'react-router-dom';
+import { useHistory } from 'react-router-dom';
 import { toggleMenuButton } from '../../store/reducers/nav';
+import styled, { css } from 'styled-components';
 
-const style = {
-  color: '#707070',
-  marginBottom: '8px'
-}
+const Link = styled.a`
+  display: block;
+  color: #707070;
+  padding: 10px 0;
+  cursor: pointer;
+
+  &:hover {
+    color: black;
+  }
+`;
 
 const RightNavItem = ({ to, children }) => {
   const dispatch = useDispatch();
+  const history = useHistory();
 
   const handleClick = () => {
+    history.push(to);
     dispatch(toggleMenuButton());
   };
 
   return (  
-    <Link to={to} onClick={handleClick} style={style}>
+    <Link onClick={handleClick}>
       {children}
     </Link>
   );
