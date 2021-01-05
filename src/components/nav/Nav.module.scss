@@ -10,6 +10,7 @@
   justify-content: center;
   background: #ffffffef;
   border-bottom: 1px solid gainsboro;
+  box-sizing: border-box;
 
   @media (max-width: 800px) {
     height: $header-height-mobile;
