@@ -1,6 +1,7 @@
 const regularCourse = {
   mainTitle: '정규 과정',
   subTitle: 'Spring term - 15 weeks - 3 weekly lessons',
+  headImage: 'https://miro.medium.com/max/927/1*AzveYvpBJ0RyAF5ZM5xF3g.png',
   headText: `Gabriel Latin에서 만든 이 과정은 참가자가 고전 언어에 대한 보다 철저한 전문 지식과 교육 방법을 개발할 수 있도록 고안되었습니다. 서양 문명의 원래 언어를 유창하게 읽고 쓰고 말하는 법을 배우십시오. Gabriel Latin에서 만든 이 과정은 참가자가 고전 언어에 대한 보다 철저한 전문 지식과 교육 방법을 개발할 수 있도록 고안되었습니다. 서양 문명의 원래 언어를 유창하게 읽고 쓰고 말하는 법을 배우십시오.`,
   courses: [
     {
@@ -14,6 +15,7 @@ const regularCourse = {
       items: [
         {
           type: 'title',
+          options: ['small'],
           value: `대상`
         },
         {
@@ -24,6 +26,7 @@ const regularCourse = {
         },
         {
           type: 'title',
+          options: ['small'],
           value: `방법`
         },
         {
@@ -34,6 +37,7 @@ const regularCourse = {
         },
         {
           type: 'title',
+          options: ['small'],
           value: `내용`
         },
         {
@@ -45,6 +49,7 @@ const regularCourse = {
         },
         {
           type: 'title',
+          options: ['small'],
           value: `교재`
         },
         {
@@ -53,6 +58,7 @@ const regularCourse = {
         },
         {
           type: 'title',
+          options: ['small'],
           value: `주의`
         },
         {
@@ -62,8 +68,7 @@ const regularCourse = {
         },
         {
           type: 'text',
-          value: `최소 10명이 되어야 개강됩니다.
-수업 참가를 원하시는 분은 아래의 양식을 채워 제출해주세요. 3일 이내로 결제정보를 담은 확인 메일을 보내드립니다.`
+          value: `수업 참가를 원하시는 분은 아래의 양식을 채워 제출해주세요. 3일 이내로 결제정보를 담은 확인 메일을 보내드립니다.`
         },
       ]
     },
@@ -79,6 +84,7 @@ const regularCourse = {
       items: [
         {
           type: 'title',
+          options: ['small'],
           value: `대상`
         },
         {
@@ -89,6 +95,7 @@ const regularCourse = {
         },
         {
           type: 'title',
+          options: ['small'],
           value: `방법`
         },
         {
@@ -99,6 +106,7 @@ const regularCourse = {
         },
         {
           type: 'title',
+          options: ['small'],
           value: `내용`
         },
         {
@@ -110,6 +118,7 @@ const regularCourse = {
         },
         {
           type: 'title',
+          options: ['small'],
           value: `교재`
         },
         {
@@ -118,6 +127,7 @@ const regularCourse = {
         },
         {
           type: 'title',
+          options: ['small'],
           value: `주의`
         },
         {
