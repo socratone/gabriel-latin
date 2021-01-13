@@ -21,6 +21,7 @@ const RegularCourses = () => {
     let items = [];
     for (let i = 0; i < data.courses.length; i++) {
       const course = data.courses[i];
+      items.push({ type: 'title', value: course.title });
       for (let j = 0; j < course.items.length; j++) {
         items.push(course.items[j]);
       }
