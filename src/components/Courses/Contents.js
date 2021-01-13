@@ -9,10 +9,10 @@ const Contents = ({ items }) => {
   return (  
     <section className={styles.wrap}>
       <nav className={styles.nav}>
-        {items.map((item, index) => 
+        {items.map((item, i) => 
           <TabItem 
-            key={item.id} 
-            onClick={() => setIndex(index)}
+            key={i} 
+            onClick={() => setIndex(i)}
           >
             {item.tabTitle}
           </TabItem>

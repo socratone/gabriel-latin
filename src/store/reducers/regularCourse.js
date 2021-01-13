@@ -5,8 +5,8 @@ const slice = createSlice({
   initialState: {
     mainTitle: '',
     subTitle: '',
-    headText: [],
-    contentsItems: [],
+    headText: '',
+    courses: [],
     items: []
   },
   reducers: {

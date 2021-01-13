@@ -17,21 +17,32 @@ const RegularCourses = () => {
     dispatch(setRegularCourse(regularCourse));
   }, []);
 
+  const collectItems = () => {
+    let items = [];
+    for (let i = 0; i < data.courses.length; i++) {
+      const course = data.courses[i];
+      for (let j = 0; j < course.items.length; j++) {
+        items.push(course.items[j]);
+      }
+    }
+    return items;
+  };
+
   return (  
     <PageFrame>
       <main>
         <Title main>{data.mainTitle}</Title>
         <Title sub>{data.subTitle}</Title>
-        {data.headText.map((text, i) => <Text key={i}>{text}</Text>)}
-        {data.contentsItems.length > 0 && <Contents items={data.contentsItems} />}
-        {data.items.map(item => {
+        {data.headText && <Text>{data.headText}</Text>}
+        {data.courses.length > 0 && <Contents items={data.courses} />}
+        {data.courses.length > 0 && collectItems().map((item, i) => {
           if (item.type === 'title') 
-            return <Title key={item.id}>{item.value}</Title>
+            return <Title key={i}>{item.value}</Title>
           else if (item.type === 'text') 
-            return <Text key={item.id}>{item.value}</Text>
+            return <Text key={i}>{item.value}</Text>
           else if (item.type === 'image') 
             return <Image 
-              key={item.id} 
+              key={i} 
               src={item.value} 
               width={item.width} 
               align={item.align} />
