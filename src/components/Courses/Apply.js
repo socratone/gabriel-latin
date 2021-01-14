@@ -4,7 +4,7 @@ import styles from './Apply.module.scss';
 const Apply = () => {
   return (  
     <>
-      <section className={styles.inputWrap}>
+      <section className={styles.inputWrap} id="submit-area">
         <h3 className={styles.title}>신청하기</h3>
         <div className={styles.item}>
           <label className={styles.label}>이름</label>
