@@ -48,7 +48,7 @@ const RegularCourses = () => {
             let section = false;
             if (item.options && item.options.indexOf('small') >= 0) small = true;
             if (item.options && item.options.indexOf('section') >= 0) section = true;
-            return <Title key={i} small={small} section={section}>{item.value}</Title>
+            return <Title key={i} small={small} section={section} id={item.value}>{item.value}</Title>
           } else if (item.type === 'text') {
             return (
               <Text key={i}>

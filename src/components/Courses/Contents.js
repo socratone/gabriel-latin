@@ -27,7 +27,7 @@ const Contents = ({ items }) => {
           <div className={styles.description}>
             {applySpacesAndLineBreaksToText(items[index].description)}
           </div>
-          <a className={styles.button}>자세히 보기</a>
+          <a className={styles.button} href={'#' + items[index].title}>자세히 보기</a>
           <a className={styles.button} href="#submit-area">수강 신청하기</a>
         </div>
       </div>
