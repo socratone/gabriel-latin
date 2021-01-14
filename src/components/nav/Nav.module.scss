@@ -1,13 +1,10 @@
 @import '../common/layout.scss';
 
 .wrap {
-  // position: fixed;
-  top: 0;
   width: 100vw;
   height: $header-height;
   display: flex;
   justify-content: center;
-  background: #ffffffef;
   border-bottom: 1px solid gainsboro;
   box-sizing: border-box;
 
@@ -27,6 +24,11 @@
   align-items: center;
   height: 100%;
   width: 100%;
+  box-sizing: border-box;
+
+  @media (min-width: 1000px) {
+    width: 1000px;
+  }
 }
 
 .titleWrap {
@@ -34,10 +36,6 @@
   height: 100%;
   display: flex;
   align-items: center;
-
-  @media (min-width: 960px) {
-    width: 920px;
-  }
 }
 
 .title {
@@ -55,10 +53,6 @@
   display: flex;
   justify-content: space-between;
   width: 100%;
-
-  @media (min-width: 960px) {
-    width: 920px;
-  }
 
   @media (max-width: 800px) {
     display: none;
