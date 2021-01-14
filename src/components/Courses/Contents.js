@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import convertTextToJSX from '../../helper/convertTextToJSX';
+import applySpacesAndLineBreaksToText from '../../helper/applySpacesAndLineBreaksToText';
 import TabItem from './TabItem';
 import styles from './Contents.module.scss';
 
@@ -25,7 +25,7 @@ const Contents = ({ items }) => {
         <div className={styles.texts}>
           <h3 className={styles.title}>{items[index].title}</h3>
           <div className={styles.description}>
-            {convertTextToJSX(items[index].description)}
+            {applySpacesAndLineBreaksToText(items[index].description)}
           </div>
           <a className={styles.button}>자세히 보기</a>
           <a className={styles.button}>수강 신청하기</a>

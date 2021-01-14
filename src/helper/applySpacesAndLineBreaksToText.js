@@ -1,6 +1,6 @@
 import React from 'react';
 
-const convertLineBreakToBr = text => {
+const applySpacesAndLineBreaksToText = text => {
   let texts = [];
   let line = '';
   for (let i = 0; i < text.length; i++) {
@@ -8,6 +8,8 @@ const convertLineBreakToBr = text => {
       texts.push(line);
       line = '';
       texts.push(<br key={i} />);
+    } else if (text[i] === ' ') {
+      line += '\u00A0';
     } else {
       line += text[i];
     }
@@ -16,4 +18,4 @@ const convertLineBreakToBr = text => {
   return texts;
 };
 
-export default convertLineBreakToBr;
+export default applySpacesAndLineBreaksToText;

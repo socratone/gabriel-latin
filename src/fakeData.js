@@ -1,8 +1,8 @@
 const regularCourse = {
   mainTitle: '정규 과정',
-  // subTitle: 'Spring term - 15 weeks - 3 weekly lessons',
+  subTitle: '임시제목 임시제목 임시제목 임시제목 임시제목 임시제목',
   headImage: 'https://gabriel-latin.s3.ap-northeast-2.amazonaws.com/assets/regular-courses/regular-courses-head.jpg',
-  // headText: `Gabriel Latin에서 만든 이 과정은 참가자가 고전 언어에 대한 보다 철저한 전문 지식과 교육 방법을 개발할 수 있도록 고안되었습니다. 서양 문명의 원래 언어를 유창하게 읽고 쓰고 말하는 법을 배우십시오. Gabriel Latin에서 만든 이 과정은 참가자가 고전 언어에 대한 보다 철저한 전문 지식과 교육 방법을 개발할 수 있도록 고안되었습니다. 서양 문명의 원래 언어를 유창하게 읽고 쓰고 말하는 법을 배우십시오.`,
+  headText: `어서오세요. 어서오세요. 어서오세요. 어서오세요. 어서오세요. 어서오세요. 어서오세요. 어서오세요. 어서오세요. 어서오세요. 어서오세요. 어서오세요. 어서오세요. 어서오세요. 어서오세요. 어서오세요. 어서오세요. 어서오세요. 어서오세요. 어서오세요. 어서오세요. 어서오세요. 어서오세요. 어서오세요. 어서오세요. 어서오세요. 어서오세요. 어서오세요. 어서오세요. 어서오세요. 어서오세요. 어서오세요. 어서오세요. 어서오세요. 어서오세요. 어서오세요. `,
   courses: [
     {
       tabTitle: 'Latin(1)',

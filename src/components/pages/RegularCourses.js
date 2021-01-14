@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { setRegularCourse } from '../../store/reducers/regularCourse';
-import convertLineBreakToBr from '../../helper/convertLineBreakToBr';
+import applySpacesAndLineBreaksToText from '../../helper/applySpacesAndLineBreaksToText';
 import PageFrame from '../common/PageFrame';
 import Title from '../Courses/Title';
 import Text from '../Courses/Text';
@@ -37,7 +37,9 @@ const RegularCourses = () => {
       <PageFrame>
         <Title main>{data.mainTitle}</Title>
         <Title>{data.subTitle}</Title>
-        {data.headText && <Text>{data.headText}</Text>}
+        {data.headText && <Text>
+          {applySpacesAndLineBreaksToText(data.headText)}
+        </Text>}
         {data.courses.length > 0 && <Contents items={data.courses} />}
         {data.courses.length > 0 && collectItems().map((item, i) => {
           if (item.type === 'title') {
@@ -47,7 +49,11 @@ const RegularCourses = () => {
             if (item.options && item.options.indexOf('section') >= 0) section = true;
             return <Title key={i} small={small} section={section}>{item.value}</Title>
           } else if (item.type === 'text') {
-            return <Text key={i}>{convertLineBreakToBr(item.value)}</Text>
+            return (
+              <Text key={i}>
+                {applySpacesAndLineBreaksToText(item.value)}
+              </Text>
+            );
           } else if (item.type === 'image') {
             return <Image 
               key={i} 
