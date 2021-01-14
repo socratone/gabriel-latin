@@ -1,10 +1,9 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import {
   BrowserRouter as Router,
   Switch,
   Route
 } from "react-router-dom";
-import HeaderBumper from './common/HeaderBumper';
 import Nav from './nav/Nav';
 import Exams from './pages/Exams';
 import Fnq from './pages/Fnq';
@@ -15,12 +14,30 @@ import PrivateCourses from './pages/PrivateCourses';
 import RegularCourses from './pages/RegularCourses';
 import styles from './Routes.module.scss';
 
+const HEADER_HEIGHT = 80;
+const HEADER_HEIGHT_MOBILE = 50;
+
 const Routes = () => {
+  const [height, setHeight] = useState('');
+
+  window.onresize = () => {
+    setHeight(setMainHeight());
+  }
+
+  useEffect(() => {
+    setHeight(setMainHeight());
+  }, [])
+
+  const setMainHeight = () => {
+    if (window.innerWidth <= 800) 
+      return window.innerHeight - HEADER_HEIGHT_MOBILE + 'px';
+    return window.innerHeight - HEADER_HEIGHT + 'px';
+  };
+
   return (  
     <Router>
       <Nav />
-      <div className={styles.mainWrap}>
-        <HeaderBumper />
+      <div className={styles.mainWrap} style={{ height }}>
         <Switch>
           <Route path="/llpsi">
             <Llpsi />
