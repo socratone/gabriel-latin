@@ -73,7 +73,6 @@ const regularCourse = {
       ]
     },
     {
-      id: 1,
       tabTitle: 'Latin(2)',
       image: 'https://picsum.photos/540/360',
       title: 'Latin (part 2):',
