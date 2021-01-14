@@ -7,6 +7,7 @@ import Title from '../Courses/Title';
 import Text from '../Courses/Text';
 import Contents from '../Courses/Contents';
 import Image from '../Courses/Image';
+import Apply from '../Courses/Apply';
 
 import { regularCourse } from '../../fakeData';
 
@@ -62,6 +63,7 @@ const RegularCourses = () => {
               align={item.align} />
           }
         })}
+        <Apply />
       </PageFrame>
     </main>
   );

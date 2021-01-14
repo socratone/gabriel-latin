@@ -1,0 +1,65 @@
+.inputWrap {
+  margin-top: 80px;
+  padding: 15px;
+  border: 1px solid #e0e0e5;
+}
+
+.title {
+  font-size: 1.75rem;
+  margin-bottom: 2rem;
+}
+
+.itemWrap {
+  display: flex;
+  flex-direction: column;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+
+.itemBottom {
+  display: flex;
+  flex-direction: column;
+}
+
+.label {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.textInput {
+  background-color: white;
+  vertical-align: middle;
+  border: 1px solid #e0e0e5;
+  font-size: 1rem;
+  padding: 10px;
+}
+
+.textArea {
+  background-color: white;
+  vertical-align: middle;
+  border: 1px solid #e0e0e5;
+  font-size: 1rem;
+  padding: 10px;
+  line-height: 2;
+}
+
+.submitWrap {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+}
+
+.submitButton {
+  background: #acd4ff;
+  color: #0984e3;
+  padding: 1.2rem 1.8rem;
+  font-size: 0.8rem;
+  font-weight: 700;
+  border-radius: 100px;
+  cursor: pointer;
+}
