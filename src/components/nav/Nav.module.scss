@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&family=Quicksand&display=swap');
 @import '../common/layout.scss';
 
 .wrap {
@@ -39,13 +40,25 @@
 }
 
 .title {
-  font-size: 22px;
-  font-weight: 300;
+  font-size: 25px;
+  font-weight: 400;
   color: #707070;
+  font-family: 'Quicksand', sans-serif;
+
+  @media (max-width: 380px) {
+    display: none;
+  }
   
   @media (max-width: 800px) {
     font-size: 20px;
-    font-weight: 250;
+  }
+}
+
+.firstChar {
+  font-size: 40px;
+
+  @media (max-width: 800px) {
+    font-size: 32px;
   }
 }
 

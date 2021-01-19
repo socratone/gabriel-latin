@@ -7,26 +7,21 @@ const HomeImage = () => {
       <div 
         className={styles.image} 
         style={{ 
-          backgroundImage: `url(https://cdn.pixabay.com/photo/2017/09/07/16/50/acropolis-2725918_1280.jpg)`
+          backgroundImage: `url(https://gabriel-latin.s3.ap-northeast-2.amazonaws.com/assets/home/home.jpg)`
         }} 
       />
       <div className={styles.imageColor}>
-        <p 
-          className={styles.text}
-          style={{
-            fontSize: '60px'
-          }}
-        >
-          Gabriel
-        </p>
-        <p 
-          className={styles.text}
-          style={{
-            fontSize: '24px'
-          }}
-        >
-          Institutum Latinitatis
-        </p>
+        <div className={styles.firstLine}>
+          <p className={styles.text}><strong>G</strong>abriel</p>
+        </div>
+        <div className={styles.secondLine}>
+          <div className={styles.institutum}>
+            <p className={styles.text}><strong>I</strong>nstitutum</p>
+          </div>
+          <div className={styles.latinitatis}>
+            <p className={styles.text}><strong>L</strong>atinitatis</p>
+          </div>
+        </div>
       </div>
     </section>
   );

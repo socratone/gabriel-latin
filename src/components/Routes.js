@@ -15,7 +15,7 @@ import PrivateCourses from './pages/PrivateCourses';
 import RegularCourses from './pages/RegularCourses';
 import styles from './Routes.module.scss';
 
-const HEADER_HEIGHT = 120;
+const HEADER_HEIGHT = 134;
 const HEADER_HEIGHT_MOBILE = 50;
 
 const Routes = () => {

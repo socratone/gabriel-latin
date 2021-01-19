@@ -13,14 +13,20 @@ const Nav = () => {
     <header className={styles.wrap}>
       <div className={styles.navWrap}>
         <div className={styles.titleWrap}>
-          <p className={styles.title}>Gabriel Institutum Latinitatis</p>
+          <p className={styles.title}>
+            <span className={styles.firstChar}>G</span>abriel{' '}
+            <span className={styles.firstChar}>I</span>nstitutum{' '}
+            <span className={styles.firstChar}>L</span>atinitatis</p>
         </div>
         <nav className={styles.nav}>
           <NavItem to="/">
             Home
           </NavItem>
-          <NavItem to="/llpsi">
-            LLPSI
+          <NavItem to="/about">
+            About
+          </NavItem>
+          <NavItem to="/whylatin">
+            Why Latin ?
           </NavItem>
           <NavItem to="/courses/regular">
             Regular Courses
