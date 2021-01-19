@@ -19,12 +19,10 @@ const RegularCourses = () => {
     dispatch(setRegularCourse(regularCourse));
   }, []);
 
-  const collectItems = () => {
+  const getCoursesItems = () => {
     let items = [];
     for (let i = 0; i < data.courses.length; i++) {
       const course = data.courses[i];
-      // section title
-      items.push({ type: 'title', options: ['section'], value: course.title });
       for (let j = 0; j < course.items.length; j++) {
         items.push(course.items[j]);
       }
@@ -32,37 +30,32 @@ const RegularCourses = () => {
     return items;
   };
 
+  const showItems = (item, i) => {
+    if (item.type === 'title') return (
+      <Title key={i} id={item.value}>{item.value}</Title>
+    );
+    else if (item.type === 'subTitle') return (
+      <Title key={i} small>{item.value}</Title>
+    );
+    else if (item.type === 'text') return (
+      <Text key={i}>{applySpacesAndLineBreaksToText(item.value)}</Text>
+    );
+    else if (item.type === 'image') return (
+      <Image key={i} src={item.value} width={item.width} align={item.align} />
+    );
+    else if (item.type === 'bumper') return (
+      <div style={{ height: item.value }} />
+    );
+  }
+
   return (  
     <main>
-      <img src={data.headImage} alt="regular" width="100%" style={{ display: 'block' }}/>
+      <img src={data.image} alt="regular" width="100%" style={{ display: 'block' }}/>
       <PageFrame>
-        <Title main>{data.mainTitle}</Title>
-        <Title>{data.subTitle}</Title>
-        {data.headText && <Text>
-          {applySpacesAndLineBreaksToText(data.headText)}
-        </Text>}
-        {data.courses.length > 0 && <Contents items={data.courses} />}
-        {data.courses.length > 0 && collectItems().map((item, i) => {
-          if (item.type === 'title') {
-            let small = false;
-            let section = false;
-            if (item.options && item.options.indexOf('small') >= 0) small = true;
-            if (item.options && item.options.indexOf('section') >= 0) section = true;
-            return <Title key={i} small={small} section={section} id={item.value}>{item.value}</Title>
-          } else if (item.type === 'text') {
-            return (
-              <Text key={i}>
-                {applySpacesAndLineBreaksToText(item.value)}
-              </Text>
-            );
-          } else if (item.type === 'image') {
-            return <Image 
-              key={i} 
-              src={item.value} 
-              width={item.width} 
-              align={item.align} />
-          }
-        })}
+        <Title main>{data.title}</Title>
+        {data.items.map((item, i) => showItems(item, i))}
+        <Contents items={data.courses} />
+        {getCoursesItems().map((item, i) => showItems(item, i))}
         <Apply />
       </PageFrame>
     </main>

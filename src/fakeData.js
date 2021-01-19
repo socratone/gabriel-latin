@@ -1,8 +1,40 @@
 const regularCourse = {
-  mainTitle: '2021년 정규 과정',
-  subTitle: '2021년 정규 과정',
-  headImage: 'https://gabriel-latin.s3.ap-northeast-2.amazonaws.com/assets/regular-courses/regular-courses-head.jpg',
-  headText: `어서오세요. 어서오세요. 어서오세요. 어서오세요. 어서오세요. 어서오세요. 어서오세요. 어서오세요. 어서오세요. 어서오세요. 어서오세요. 어서오세요. 어서오세요. 어서오세요. 어서오세요. 어서오세요. 어서오세요. 어서오세요. 어서오세요. 어서오세요. 어서오세요. 어서오세요. 어서오세요. 어서오세요. 어서오세요. 어서오세요. 어서오세요. 어서오세요. 어서오세요. 어서오세요. 어서오세요. 어서오세요. 어서오세요. 어서오세요. 어서오세요. 어서오세요. `,
+  title: '2021년 정규 과정',
+  items: [
+    {
+      type: 'title',
+      value: 'Spring Term'
+    },
+    {
+      type: 'text',
+      value: `기간 : 2021년 3월 1일 ~ 5월 29일, 13주
+과목 : Latin 1 - 1`
+    },
+    {
+      type: 'title',
+      value: 'Summer Term'
+    },
+    {
+      type: 'text',
+      value: `기간 : 2021년 6월 28일 ~ 10월 2일, 13주
+과목 : Latin 1 - 2`
+    },
+    {
+      type: 'title',
+      value: 'Fall & Winter Term'
+    },
+    {
+      type: 'text',
+      value: `기간 : 2021년 10월 25일 ~ 2022년 2월 11일, 13주
+과목 : Latin 1 - 3  `
+    },
+    {
+      type: 'text',
+      value: `** 2021년 정규과정에는 라틴어만 개설됩니다.
+    고대 그리스어는 개인과정만 가능하며, 정규과정은 2022년에 개설될 예정입니다.`
+    },
+  ],
+  image: 'https://gabriel-latin.s3.ap-northeast-2.amazonaws.com/assets/regular-courses/regular-courses-head.jpg',
   courses: [
     {
       tabTitle: 'Latin 1 - 1',
@@ -14,8 +46,15 @@ const regularCourse = {
 ​비용 : 100만원 (총 65시간)`,
       items: [
         {
+          type: 'bumper',
+          value: '30px'
+        },
+        {
           type: 'title',
-          options: ['small'],
+          value: 'Latin (part 1):'
+        },
+        {
+          type: 'subTitle',
           value: `대상`
         },
         {
@@ -25,8 +64,7 @@ const regularCourse = {
 라틴어를 가르치는 선생님이지만 라틴어의 형태론, 통사론, 어휘 교수법을 Natural Method로 익히고 싶은 분`
         },
         {
-          type: 'title',
-          options: ['small'],
+          type: 'subTitle',
           value: `방법`
         },
         {
@@ -36,8 +74,7 @@ const regularCourse = {
 수업시간에 사용하는 주된 언어는 라틴어이며, 필요한 경우 한국어와 영어를 사용할 수 있습니다.`
         },
         {
-          type: 'title',
-          options: ['small'],
+          type: 'subTitle',
           value: `내용`
         },
         {
@@ -48,8 +85,7 @@ const regularCourse = {
 제공되는 온라인 연습문제는 필수이며, 적어도 주당 3시간의 개인적인 학습시간을 권장합니다.`
         },
         {
-          type: 'title',
-          options: ['small'],
+          type: 'subTitle',
           value: `교재`
         },
         {
@@ -57,8 +93,7 @@ const regularCourse = {
           value: `H. Ørberg, Lingua Latina per se illustrata: pars I: Familia Romana`
         },
         {
-          type: 'title',
-          options: ['small'],
+          type: 'subTitle',
           value: `주의`
         },
         {
@@ -79,8 +114,15 @@ const regularCourse = {
       description: `중급자를 위한 온라인 화상 그룹수업 (Zoom)`,
       items: [
         {
+          type: 'bumper',
+          value: '30px'
+        },
+        {
           type: 'title',
-          options: ['small'],
+          value: 'Latin (part 2):'
+        },
+        {
+          type: 'subTitle',
           value: `대상`
         },
         {
@@ -90,8 +132,7 @@ const regularCourse = {
 라틴어를 가르치는 선생님이지만 라틴어의 형태론, 통사론, 어휘 교수법을 Natural Method로 익히고 싶은 분`
         },
         {
-          type: 'title',
-          options: ['small'],
+          type: 'subTitle',
           value: `방법`
         },
         {
@@ -99,8 +140,7 @@ const regularCourse = {
           value: `임시글 임시글 임시글 임시글 임시글 임시글 임시글 임시글 임시글 임시글 임시글 임시글 임시글 임시글 임시글 임시글 임시글 임시글 `
         },
         {
-          type: 'title',
-          options: ['small'],
+          type: 'subTitle',
           value: `내용`
         },
         {
@@ -108,8 +148,7 @@ const regularCourse = {
           value: `임시글 임시글 임시글 임시글 임시글 임시글 임시글 임시글 임시글 임시글 임시글 임시글 임시글 임시글 임시글 `
         },
         {
-          type: 'title',
-          options: ['small'],
+          type: 'subTitle',
           value: `교재`
         },
         {
@@ -117,8 +156,7 @@ const regularCourse = {
           value: `H. Ørberg, Lingua Latina per se illustrata: pars I: Familia Romana`
         },
         {
-          type: 'title',
-          options: ['small'],
+          type: 'subTitle',
           value: `주의`
         },
         {
@@ -139,8 +177,15 @@ const regularCourse = {
       description: `중급자를 위한 온라인 화상 그룹수업 (Zoom)`,
       items: [
         {
+          type: 'bumper',
+          value: '30px'
+        },
+        {
           type: 'title',
-          options: ['small'],
+          value: 'Latin (part 3):'
+        },
+        {
+          type: 'subTitle',
           value: `대상`
         },
         {
@@ -150,8 +195,7 @@ const regularCourse = {
 라틴어를 가르치는 선생님이지만 라틴어의 형태론, 통사론, 어휘 교수법을 Natural Method로 익히고 싶은 분`
         },
         {
-          type: 'title',
-          options: ['small'],
+          type: 'subTitle',
           value: `방법`
         },
         {
@@ -159,8 +203,7 @@ const regularCourse = {
           value: `임시글 임시글 임시글 임시글 임시글 임시글 임시글 임시글 임시글 임시글 임시글 임시글 임시글 임시글 임시글 임시글 임시글 임시글 `
         },
         {
-          type: 'title',
-          options: ['small'],
+          type: 'subTitle',
           value: `내용`
         },
         {
@@ -168,8 +211,7 @@ const regularCourse = {
           value: `임시글 임시글 임시글 임시글 임시글 임시글 임시글 임시글 임시글 임시글 임시글 임시글 임시글 임시글 임시글 `
         },
         {
-          type: 'title',
-          options: ['small'],
+          type: 'subTitle',
           value: `교재`
         },
         {
@@ -177,8 +219,7 @@ const regularCourse = {
           value: `H. Ørberg, Lingua Latina per se illustrata: pars I: Familia Romana`
         },
         {
-          type: 'title',
-          options: ['small'],
+          type: 'subTitle',
           value: `주의`
         },
         {

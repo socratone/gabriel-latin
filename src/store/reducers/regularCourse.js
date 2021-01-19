@@ -3,11 +3,9 @@ import { createSlice } from '@reduxjs/toolkit';
 const slice = createSlice({
   name: 'regularCourse',
   initialState: {
-    mainTitle: '',
-    subTitle: '',
-    headText: '',
+    title: '',
+    items: [],
     courses: [],
-    items: []
   },
   reducers: {
     setRegularCourse: (state, action) => action.payload

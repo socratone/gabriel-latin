@@ -5,6 +5,8 @@ import styles from './Contents.module.scss';
 
 const Contents = ({ items }) => {
   const [index, setIndex] = useState(0);
+  
+  if (items.length < 1) return null;
 
   return (  
     <section className={styles.wrap}>
