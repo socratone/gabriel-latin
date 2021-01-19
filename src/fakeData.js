@@ -1,12 +1,12 @@
 const regularCourse = {
-  mainTitle: '정규 과정',
-  subTitle: '임시제목 임시제목 임시제목 임시제목 임시제목 임시제목',
+  mainTitle: '2021년 정규 과정',
+  subTitle: '2021년 정규 과정',
   headImage: 'https://gabriel-latin.s3.ap-northeast-2.amazonaws.com/assets/regular-courses/regular-courses-head.jpg',
   headText: `어서오세요. 어서오세요. 어서오세요. 어서오세요. 어서오세요. 어서오세요. 어서오세요. 어서오세요. 어서오세요. 어서오세요. 어서오세요. 어서오세요. 어서오세요. 어서오세요. 어서오세요. 어서오세요. 어서오세요. 어서오세요. 어서오세요. 어서오세요. 어서오세요. 어서오세요. 어서오세요. 어서오세요. 어서오세요. 어서오세요. 어서오세요. 어서오세요. 어서오세요. 어서오세요. 어서오세요. 어서오세요. 어서오세요. 어서오세요. 어서오세요. 어서오세요. `,
   courses: [
     {
-      tabTitle: 'Latin(1)',
-      image: 'https://gabriel-latin.s3.ap-northeast-2.amazonaws.com/assets/regular-courses/regular-courses-1.jpg',
+      tabTitle: 'Latin 1 - 1',
+      image: 'https://gabriel-latin.s3.ap-northeast-2.amazonaws.com/assets/regular-courses/regular-course-1-1.jpg',
       title: 'Latin (part 1):',
       description: `초급자를 위한 온라인 화상 그룹수업 (Zoom)
 기간 : 2020년 3월 1일 ~ 5월 29일, 13주
@@ -73,9 +73,69 @@ const regularCourse = {
       ]
     },
     {
-      tabTitle: 'Latin(2)',
-      image: 'https://picsum.photos/540/360',
+      tabTitle: 'Latin 1 - 2',
+      image: 'https://gabriel-latin.s3.ap-northeast-2.amazonaws.com/assets/regular-courses/regular-course-1-2.jpg',
       title: 'Latin (part 2):',
+      description: `중급자를 위한 온라인 화상 그룹수업 (Zoom)`,
+      items: [
+        {
+          type: 'title',
+          options: ['small'],
+          value: `대상`
+        },
+        {
+          type: 'text',
+          value: `라틴어를 중급으로 공부해보고 싶은 분
+라틴어를 공부해 본 적은 있지만 근본부터 깊게 공부하고 싶은 분
+라틴어를 가르치는 선생님이지만 라틴어의 형태론, 통사론, 어휘 교수법을 Natural Method로 익히고 싶은 분`
+        },
+        {
+          type: 'title',
+          options: ['small'],
+          value: `방법`
+        },
+        {
+          type: 'text',
+          value: `임시글 임시글 임시글 임시글 임시글 임시글 임시글 임시글 임시글 임시글 임시글 임시글 임시글 임시글 임시글 임시글 임시글 임시글 `
+        },
+        {
+          type: 'title',
+          options: ['small'],
+          value: `내용`
+        },
+        {
+          type: 'text',
+          value: `임시글 임시글 임시글 임시글 임시글 임시글 임시글 임시글 임시글 임시글 임시글 임시글 임시글 임시글 임시글 `
+        },
+        {
+          type: 'title',
+          options: ['small'],
+          value: `교재`
+        },
+        {
+          type: 'text',
+          value: `H. Ørberg, Lingua Latina per se illustrata: pars I: Familia Romana`
+        },
+        {
+          type: 'title',
+          options: ['small'],
+          value: `주의`
+        },
+        {
+          type: 'text',
+          value: `최소 10명이 되어야 개강됩니다.
+최소인원이 충족되지 않아 개강되지 않을 시, 수업료를 100% 환불해드립니다.`
+        },
+        {
+          type: 'text',
+          value: `수업 참가를 원하시는 분은 아래의 양식을 채워 제출해주세요. 3일 이내로 결제정보를 담은 확인 메일을 보내드립니다.`
+        },
+      ]
+    },
+    {
+      tabTitle: 'Latin 1 - 3',
+      image: 'https://gabriel-latin.s3.ap-northeast-2.amazonaws.com/assets/regular-courses/regular-course-1-3.jpg',
+      title: 'Latin (part 3):',
       description: `중급자를 위한 온라인 화상 그룹수업 (Zoom)`,
       items: [
         {
