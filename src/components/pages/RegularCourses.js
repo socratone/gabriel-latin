@@ -8,6 +8,7 @@ import Text from '../Courses/Text';
 import Contents from '../Courses/Contents';
 import Image from '../Courses/Image';
 import Apply from '../Courses/Apply';
+import styles from './RegularCourses.module.scss';
 
 import { regularCourse } from '../../fakeData';
 
@@ -49,7 +50,7 @@ const RegularCourses = () => {
   }
 
   return (  
-    <main>
+    <main className={styles.regularCourses}>
       <img src={data.image} alt="regular" width="100%" style={{ display: 'block' }}/>
       <PageFrame>
         <Title main>{data.title}</Title>
