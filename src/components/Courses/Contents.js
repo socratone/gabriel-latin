@@ -5,18 +5,19 @@ import styles from './Contents.module.scss';
 
 const Contents = ({ items }) => {
   const [index, setIndex] = useState(0);
-  
+
+  const handleTabClick = (index) => {
+    setIndex(index);
+  }
+
   if (items.length < 1) return null;
 
   return (  
     <section className={styles.wrap}>
       <nav className={styles.nav}>
         {items.map((item, i) => 
-          <TabItem 
-            key={i} 
-            onClick={() => setIndex(i)}
-          >
-            {item.tabTitle}
+          <TabItem key={i} onClick={() => handleTabClick(i)} selected={i === index}>
+              {item.tabTitle}
           </TabItem>
         )}
       </nav>
@@ -30,7 +31,7 @@ const Contents = ({ items }) => {
             {applySpacesAndLineBreaksToText(items[index].description)}
           </div>
           <a className={styles.button} href={'#' + items[index].title}>자세히 보기</a>
-          <a className={styles.button} href="#submit-area">수강 신청하기</a>
+          {items[index].isOpen && <a className={styles.button} href="#submit-area">수강 신청하기</a>}
         </div>
       </div>
     </section>
