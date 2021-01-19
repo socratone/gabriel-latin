@@ -1,14 +1,14 @@
 import React from 'react';
 import PageFrame from '../common/PageFrame';
 
-const Llpsi = () => {
+const About = () => {
   return (  
     <PageFrame>
       <main>
-        Llpsi
+        About
       </main>
     </PageFrame>
   );
 }
  
-export default Llpsi;
+export default About;

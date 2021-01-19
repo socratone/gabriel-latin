@@ -34,8 +34,11 @@ const RightNav = () => {
         <RightNavItem to="/">
           Home
         </RightNavItem>
-        <RightNavItem to="/llpsi">
-          LLPSI
+        <RightNavItem to="/about">
+          About
+        </RightNavItem>
+        <RightNavItem to="/whylatin">
+          Why Latin ?
         </RightNavItem>
         <RightNavItem to="/courses/regular">
           Regular Courses

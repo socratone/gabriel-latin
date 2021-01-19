@@ -8,13 +8,14 @@ import Nav from './nav/Nav';
 import Exams from './pages/Exams';
 import Fnq from './pages/Fnq';
 import Home from './pages/Home';
-import Llpsi from './pages/Llpsi';
+import WhyLatin from './pages/WhyLatin';
+import About from './pages/About';
 import More from './pages/More';
 import PrivateCourses from './pages/PrivateCourses';
 import RegularCourses from './pages/RegularCourses';
 import styles from './Routes.module.scss';
 
-const HEADER_HEIGHT = 80;
+const HEADER_HEIGHT = 120;
 const HEADER_HEIGHT_MOBILE = 50;
 
 const Routes = () => {
@@ -39,8 +40,11 @@ const Routes = () => {
       <Nav />
       <div className={styles.mainWrap} style={{ height }}>
         <Switch>
-          <Route path="/llpsi">
-            <Llpsi />
+          <Route path="/whylatin">
+            <WhyLatin />
+          </Route>
+          <Route path="/about">
+            <About />
           </Route>
           <Route path="/courses/regular">
             <RegularCourses />
