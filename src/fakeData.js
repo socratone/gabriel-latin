@@ -44,6 +44,7 @@ const regularCourse = {
 기간 : 2020년 3월 1일 ~ 5월 29일, 13주
 제공 : 주 2회 수업 + 주 1회 튜터링 + 온라인 연습문제
 ​비용 : 100만원 (총 65시간)`,
+      isOpen: true,
       items: [
         {
           type: 'bumper',
@@ -112,6 +113,7 @@ const regularCourse = {
       image: 'https://gabriel-latin.s3.ap-northeast-2.amazonaws.com/assets/regular-courses/regular-course-1-2.jpg',
       title: 'Latin (part 2):',
       description: `중급자를 위한 온라인 화상 그룹수업 (Zoom)`,
+      isOpen: false,
       items: [
         {
           type: 'bumper',
@@ -175,6 +177,7 @@ const regularCourse = {
       image: 'https://gabriel-latin.s3.ap-northeast-2.amazonaws.com/assets/regular-courses/regular-course-1-3.jpg',
       title: 'Latin (part 3):',
       description: `중급자를 위한 온라인 화상 그룹수업 (Zoom)`,
+      isOpen: false,
       items: [
         {
           type: 'bumper',

@@ -44,7 +44,7 @@ const RegularCourses = () => {
       <Image key={i} src={item.value} width={item.width} align={item.align} />
     );
     else if (item.type === 'bumper') return (
-      <div style={{ height: item.value }} />
+      <div key={i} style={{ height: item.value }} />
     );
   }
 
