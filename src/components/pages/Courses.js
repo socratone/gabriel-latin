@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { setCourse } from '../../store/reducers/course';
 import applySpacesAndLineBreaksToText from '../../helper/applySpacesAndLineBreaksToText';
@@ -13,14 +13,17 @@ import styles from './Courses.module.scss';
 import { regularCourse, privateCourse } from '../../fakeData';
 
 const Courses = ({ category }) => {
-  const dispatch = useDispatch();
+  const [nav, setNav] = useState('');
   const data = useSelector(state => state.ui.pages.course);
+  const dispatch = useDispatch();
   
   useEffect(() => {
     if (category === 'regular') {
       dispatch(setCourse(regularCourse));
+      setNav('');
     } else if (category = 'private') {
       dispatch(setCourse(privateCourse));
+      setNav('private');
     }
   }, [category]);
 
@@ -59,7 +62,7 @@ const Courses = ({ category }) => {
       <PageFrame>
         <Title main>{data.title}</Title>
         {data.items.map((item, i) => showItems(item, i))}
-        <Contents items={data.courses} />
+        <Contents items={data.courses} nav={nav} />
         {getCoursesItems().map((item, i) => showItems(item, i))}
         <Apply />
       </PageFrame>

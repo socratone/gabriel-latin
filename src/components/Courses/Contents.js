@@ -3,7 +3,7 @@ import applySpacesAndLineBreaksToText from '../../helper/applySpacesAndLineBreak
 import styles from './Contents.module.scss';
 import ContentsNav from './ContentsNav';
 
-const Contents = ({ items }) => {
+const Contents = ({ items, nav }) => {
   const [index, setIndex] = useState(0);
 
   const changeIndex = (index) => {
@@ -14,7 +14,7 @@ const Contents = ({ items }) => {
 
   return (  
     <section className={styles.wrap}>
-      <ContentsNav items={items} index={index} changeIndex={changeIndex} />
+      <ContentsNav items={items} index={index} changeIndex={changeIndex} nav={nav} />
       <div className={styles.item}>
         <div className={styles.imageWrap}>
           <img src={items[index].image} alt="item-image" className={styles.image}/>
