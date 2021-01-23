@@ -239,6 +239,210 @@ const regularCourse = {
   ],
 };
 
+const privateCourse = {
+  title: '2021년 Private Course',
+  items: [
+  ],
+  image: 'https://gabriel-latin.s3.ap-northeast-2.amazonaws.com/assets/regular-courses/regular-courses-head.jpg',
+  courses: [
+    {
+      tabTitle: 'GPA & Exams: GPA',
+      image: 'https://gabriel-latin.s3.ap-northeast-2.amazonaws.com/assets/private-courses/gpa-sat-ii.jpg',
+      title: 'GPA & Exams: GPA',
+      description: `국내 유일의 체계적인 SAT II 과정으로
+​최고점을 받으세요!`,
+      isOpen: false,
+      items: [
+        {
+          type: 'bumper',
+          value: '30px'
+        },
+        {
+          type: 'title',
+          value: 'GPA & Exams: GPA'
+        },
+      ]
+    },
+    {
+      tabTitle: 'AP',
+      image: 'https://gabriel-latin.s3.ap-northeast-2.amazonaws.com/assets/private-courses/ap.jpg',
+      title: 'AP',
+      description: `국내 유일의 체계적인 AP Latin 과정으로
+​최고점을 받으세요!`,
+      isOpen: false,
+      items: [
+        {
+          type: 'bumper',
+          value: '30px'
+        },
+        {
+          type: 'title',
+          value: 'AP'
+        },
+      ]
+    },
+    {
+      tabTitle: 'GCSE, A/AS Level',
+      image: '',
+      title: 'GCSE, A/AS Level',
+      description: ``,
+      isOpen: false,
+      items: [
+        {
+          type: 'bumper',
+          value: '30px'
+        },
+        {
+          type: 'title',
+          value: 'GCSE, A/AS Level'
+        },
+      ]
+    },
+    {
+      tabTitle: 'Latin: Beginner',
+      image: 'https://gabriel-latin.s3.ap-northeast-2.amazonaws.com/assets/private-courses/beginner.jpg',
+      title: 'Latin: Beginner',
+      description: `​라틴어로 듣고, 말하고, 활동하는 경험을 체험해보세요!
+
+로마 문화를 라틴어로 읽고 익힙니다.`,
+      isOpen: false,
+      items: [
+        {
+          type: 'bumper',
+          value: '30px'
+        },
+        {
+          type: 'title',
+          value: 'Latin: Beginner'
+        },
+      ]
+    },
+    {
+      tabTitle: 'Intermediate',
+      image: 'https://gabriel-latin.s3.ap-northeast-2.amazonaws.com/assets/private-courses/intermediate.jpg',
+      title: 'Latin: Intermediate',
+      description: `LLPSI 방법론을 이용하여
+더욱 다양한 단어, 표현들을 익혀보세요!
+
+로마신화와 성경을 라틴어로 읽고 익힙니다.`,
+      isOpen: false,
+      items: [
+        {
+          type: 'bumper',
+          value: '30px'
+        },
+        {
+          type: 'title',
+          value: 'Latin: Intermediate'
+        },
+      ]
+    },
+    {
+      tabTitle: 'Advanced',
+      image: 'https://gabriel-latin.s3.ap-northeast-2.amazonaws.com/assets/private-courses/advanced.jpg',
+      title: 'Latin: Advanced',
+      description: `LLPSI 방법론을 이용하여
+원문에 한걸음 더 가까이 가보세요!​
+      
+로마 역사를 라틴어로 읽고 익힙니다.`,
+      isOpen: false,
+      items: [
+        {
+          type: 'bumper',
+          value: '30px'
+        },
+        {
+          type: 'title',
+          value: 'Latin: Advanced'
+        },
+      ]
+    },
+    {
+      tabTitle: 'Expert',
+      image: 'https://gabriel-latin.s3.ap-northeast-2.amazonaws.com/assets/private-courses/expert.jpg',
+      title: 'Latin: Expert',
+      description: `LLPSI 방법론을 이용하여
+라틴 문학의 정수를 느껴보세요!
+      
+문학 작품을 라틴어로 읽습니다.`,
+      isOpen: false,
+      items: [
+        {
+          type: 'bumper',
+          value: '30px'
+        },
+        {
+          type: 'title',
+          value: 'Latin: Expert'
+        },
+      ]
+    },
+    {
+      tabTitle: 'Greek: Beginner',
+      image: 'https://gabriel-latin.s3.ap-northeast-2.amazonaws.com/assets/private-courses/beginner-greek.jpg',
+      title: 'Greek: Beginner',
+      description: `LLPSI 방법론을 이용하여
+고대 그리스어를 경험해보세요! 
+      
+그리스 문화와 역사를 그리스어로 읽습니다.`,
+      isOpen: false,
+      items: [
+        {
+          type: 'bumper',
+          value: '30px'
+        },
+        {
+          type: 'title',
+          value: 'Greek: Beginner'
+        },
+      ]
+    },
+    {
+      tabTitle: 'Intermediate',
+      image: 'https://gabriel-latin.s3.ap-northeast-2.amazonaws.com/assets/private-courses/intermediate-greek.jpg',
+      title: 'Greek: Intermediate',
+      description: `LLPSI 방법론을 이용하여
+​원문에 한걸음 더 가까이 가보세요!
+      
+​그리스 역사와 문학을 그리스어로 읽습니다.`,
+      isOpen: false,
+      items: [
+        {
+          type: 'bumper',
+          value: '30px'
+        },
+        {
+          type: 'title',
+          value: 'Greek: Intermediate'
+        },
+      ]
+    },
+    {
+      tabTitle: 'Advanced',
+      image: 'https://gabriel-latin.s3.ap-northeast-2.amazonaws.com/assets/private-courses/advanced-greek.jpg',
+      title: 'Greek: Advanced',
+      description: `LLPSI 방법론을 이용하여
+개작과 원문을 읽어보세요!
+      
+​문학 작품을 그리스어로 읽습니다.`,
+      isOpen: false,
+      items: [
+        {
+          type: 'bumper',
+          value: '30px'
+        },
+        {
+          type: 'title',
+          value: 'Greek: Advanced'
+        },
+      ]
+    },
+  ],
+};
+
+
+
 export {
-  regularCourse
+  regularCourse,
+  privateCourse
 }

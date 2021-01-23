@@ -34,9 +34,9 @@ const Nav = () => {
           <NavItem 
             to="/courses/private"
             subItems={[
-              <NavSubItem to="/" key="1">GPA SAT II AP</NavSubItem>, 
-              <NavSubItem to="/" key="2">LLPSI</NavSubItem>,
-              <NavSubItem to="/" key="3">Athenaze</NavSubItem>
+              <NavSubItem to="/courses/private" key="1">GPA SAT II AP</NavSubItem>, 
+              <NavSubItem to="/courses/private" key="2">LLPSI</NavSubItem>,
+              <NavSubItem to="/courses/private" key="3">Athenaze</NavSubItem>
             ]}
             subItemsWidth="112px"
           >

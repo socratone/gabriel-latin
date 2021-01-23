@@ -8,7 +8,7 @@ import Text from '../Courses/Text';
 import Contents from '../Courses/Contents';
 import Image from '../Courses/Image';
 import Apply from '../Courses/Apply';
-import styles from './RegularCourses.module.scss';
+import styles from './Courses.module.scss';
 
 import { regularCourse } from '../../fakeData';
 
