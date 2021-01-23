@@ -1,20 +1,18 @@
-import React, { useState } from 'react';
+import React from 'react';
 import applySpacesAndLineBreaksToText from '../../helper/applySpacesAndLineBreaksToText';
 import styles from './Contents.module.scss';
 import ContentsNav from './ContentsNav';
 
-const Contents = ({ items, nav }) => {
-  const [index, setIndex] = useState(0);
-
-  const changeIndex = (index) => {
-    setIndex(index);
-  }
-
+const Contents = ({ items, nav, index, changeIndex }) => {
   if (items.length < 1) return null;
 
   return (  
     <section className={styles.wrap}>
-      <ContentsNav items={items} index={index} changeIndex={changeIndex} nav={nav} />
+      <ContentsNav 
+        items={items} 
+        index={index} 
+        changeIndex={changeIndex} 
+        nav={nav} />
       <div className={styles.item}>
         <div className={styles.imageWrap}>
           <img src={items[index].image} alt="item-image" className={styles.image}/>

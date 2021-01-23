@@ -14,18 +14,25 @@ import { regularCourse, privateCourse } from '../../fakeData';
 
 const Courses = ({ category }) => {
   const [nav, setNav] = useState('');
+  const [index, setIndex] = useState(0);
   const data = useSelector(state => state.ui.pages.course);
   const dispatch = useDispatch();
   
   useEffect(() => {
     if (category === 'regular') {
+      setIndex(0);
       dispatch(setCourse(regularCourse));
       setNav('');
     } else if (category = 'private') {
+      setIndex(0);
       dispatch(setCourse(privateCourse));
       setNav('private');
     }
   }, [category]);
+
+  const changeIndex = (index) => {
+    setIndex(index);
+  }
 
   const getCoursesItems = () => {
     let items = [];
@@ -62,7 +69,11 @@ const Courses = ({ category }) => {
       <PageFrame>
         <Title main>{data.title}</Title>
         {data.items.map((item, i) => showItems(item, i))}
-        <Contents items={data.courses} nav={nav} />
+        <Contents 
+          items={data.courses} 
+          index={index} 
+          changeIndex={changeIndex} 
+          nav={nav} />
         {getCoursesItems().map((item, i) => showItems(item, i))}
         <Apply />
       </PageFrame>

@@ -440,8 +440,6 @@ const privateCourse = {
   ],
 };
 
-
-
 export {
   regularCourse,
   privateCourse
