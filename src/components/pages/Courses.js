@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { setPrivateCourse } from '../../store/reducers/privateCourse';
+import { setCourse } from '../../store/reducers/course';
 import applySpacesAndLineBreaksToText from '../../helper/applySpacesAndLineBreaksToText';
 import PageFrame from '../common/PageFrame';
 import Title from '../Courses/Title';
@@ -10,15 +10,19 @@ import Image from '../Courses/Image';
 import Apply from '../Courses/Apply';
 import styles from './Courses.module.scss';
 
-import { privateCourse } from '../../fakeData';
+import { regularCourse, privateCourse } from '../../fakeData';
 
-const PrivateCourses = () => {
+const Courses = ({ category }) => {
   const dispatch = useDispatch();
-  const data = useSelector(state => state.ui.pages.privateCourse);
+  const data = useSelector(state => state.ui.pages.course);
   
   useEffect(() => {
-    dispatch(setPrivateCourse(privateCourse));
-  }, []);
+    if (category === 'regular') {
+      dispatch(setCourse(regularCourse));
+    } else if (category = 'private') {
+      dispatch(setCourse(privateCourse));
+    }
+  }, [category]);
 
   const getCoursesItems = () => {
     let items = [];
@@ -63,4 +67,4 @@ const PrivateCourses = () => {
   );
 }
  
-export default PrivateCourses;
+export default Courses;

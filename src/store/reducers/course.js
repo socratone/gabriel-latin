@@ -1,7 +1,7 @@
 import { createSlice } from '@reduxjs/toolkit';
 
 const slice = createSlice({
-  name: 'privateCourse',
+  name: 'course',
   initialState: {
     title: '',
     items: [],
@@ -9,9 +9,9 @@ const slice = createSlice({
     courses: [],
   },
   reducers: {
-    setPrivateCourse: (state, action) => action.payload
+    setCourse: (state, action) => action.payload
   }
 });
 
-export const { setPrivateCourse } = slice.actions;
+export const { setCourse } = slice.actions;
 export default slice.reducer;

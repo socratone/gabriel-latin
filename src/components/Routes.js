@@ -11,8 +11,7 @@ import Home from './pages/Home';
 import WhyLatin from './pages/WhyLatin';
 import About from './pages/About';
 import More from './pages/More';
-import PrivateCourses from './pages/PrivateCourses';
-import RegularCourses from './pages/RegularCourses';
+import Courses from './pages/Courses';
 import styles from './Routes.module.scss';
 
 const HEADER_HEIGHT = 134;
@@ -47,10 +46,10 @@ const Routes = () => {
             <About />
           </Route>
           <Route path="/courses/regular">
-            <RegularCourses />
+            <Courses category="regular" />
           </Route>
           <Route path="/courses/private">
-            <PrivateCourses />
+            <Courses category="private" />
           </Route>
           <Route path="/exams">
             <Exams />

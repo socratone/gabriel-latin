@@ -1,8 +1,6 @@
 import { combineReducers } from 'redux';
-import regularCourse from './reducers/regularCourse';
-import privateCourse from './reducers/privateCourse';
+import course from './reducers/course';
 
 export default combineReducers({
-  regularCourse,
-  privateCourse
+  course
 });
