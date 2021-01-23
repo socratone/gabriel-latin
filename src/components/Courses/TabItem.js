@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './TabItem.module.scss';
 
-const TabItem = ({ onClick, selected, children, over }) => {
+const TabItem = ({ onClick, selected, children }) => {
   const setSelectedbackground = () => {
     if (selected) return '#0984e3';
   };
@@ -10,17 +10,12 @@ const TabItem = ({ onClick, selected, children, over }) => {
     if (selected) return 'white';
   };
 
-  const setBorderRadius = () => {
-    if (over) return '0.25rem';
-  };
-
   return (
     <div 
       onClick={onClick} 
       className={styles.wrap} 
       style={{ 
         background: setSelectedbackground(),
-        borderRadius: setBorderRadius()
       }}>
         <a 
           className={styles.item} 
