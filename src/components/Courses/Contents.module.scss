@@ -4,18 +4,6 @@
   margin: 2rem 0;
 }
 
-.nav {
-  display: flex;
-  border-bottom: 1px solid gainsboro;
-  
-  @media (max-width: 800px) {
-    flex-direction: column;
-    border-bottom: 0;
-    border-radius: 0.25rem 0.25rem 0 0;
-    overflow: hidden;
-  }
-}
-
 .item {
   margin: 20px 0 0 0;
   display: flex;

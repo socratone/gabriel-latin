@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
 import applySpacesAndLineBreaksToText from '../../helper/applySpacesAndLineBreaksToText';
-import TabItem from './TabItem';
 import styles from './Contents.module.scss';
+import ContentsNav from './ContentsNav';
 
 const Contents = ({ items }) => {
   const [index, setIndex] = useState(0);
 
-  const handleTabClick = (index) => {
+  const changeIndex = (index) => {
     setIndex(index);
   }
 
@@ -14,13 +14,7 @@ const Contents = ({ items }) => {
 
   return (  
     <section className={styles.wrap}>
-      <nav className={styles.nav}>
-        {items.map((item, i) => 
-          <TabItem key={i} onClick={() => handleTabClick(i)} selected={i === index}>
-              {item.tabTitle}
-          </TabItem>
-        )}
-      </nav>
+      <ContentsNav items={items} index={index} changeIndex={changeIndex} />
       <div className={styles.item}>
         <div className={styles.imageWrap}>
           <img src={items[index].image} alt="item-image" className={styles.image}/>
