@@ -1,0 +1,13 @@
+.wrap {
+  padding: 8px 16px;
+  white-space: nowrap;
+  cursor: default;
+
+  &:hover {
+    background: gainsboro;
+  }
+}
+
+.item {
+  font-size: 14px;
+}

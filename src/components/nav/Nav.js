@@ -1,6 +1,6 @@
 import React from 'react';
 import NavItem from './NavItem';
-import NavSubItem from './NavSubItem';
+import DropdownItem from './DropdownItem';
 import MenuButton from './MenuButton';
 import RightNav from './RightNav';
 import styles from './Nav.module.scss';
@@ -33,41 +33,35 @@ const Nav = () => {
           </NavItem>
           <NavItem 
             to="/courses/private"
-            subItems={[
-              <NavSubItem to="/courses/private" key="1">GPA AP GCSE A/AS</NavSubItem>, 
-              <NavSubItem to="/courses/private" key="2">Latin</NavSubItem>,
-              <NavSubItem to="/courses/private" key="3">Greek</NavSubItem>,
-              <NavSubItem to="/courses/private" key="4">Class On Demand</NavSubItem>
-            ]}
-            subItemsWidth="150px"
-          >
-            Private Courses
+            dropdown={[
+              <DropdownItem to="/courses/private" key="1">GPA AP GCSE A/AS</DropdownItem>, 
+              <DropdownItem to="/courses/private" key="2">Latin</DropdownItem>,
+              <DropdownItem to="/courses/private" key="3">Greek</DropdownItem>,
+              <DropdownItem to="/courses/private" key="4">Class On Demand</DropdownItem>
+            ]}>
+              Private Courses
           </NavItem>
           <NavItem 
             right
             to="/exams"
-            subItems={[
-              <NavSubItem to="/" key="1">National Latin Exam</NavSubItem>, 
-              <NavSubItem to="/" key="2">National Greek Exam</NavSubItem>,
-              <NavSubItem to="/" key="3">National Mythology Exam</NavSubItem>,
-              <NavSubItem to="/" key="4">National Classical Etymology Exam</NavSubItem>,
-              <NavSubItem to="/" key="5">National Roman Civilaziation Exam</NavSubItem>,
-              <NavSubItem to="/" key="6">National Latin Vocabulary Exam</NavSubItem>
-            ]}
-            subItemsWidth="248px"
-          >
-            Exams
+            dropdown={[
+              <DropdownItem to="/exams" key="1">National Latin Exam</DropdownItem>, 
+              <DropdownItem to="/exams" key="2">National Greek Exam</DropdownItem>,
+              <DropdownItem to="/exams" key="3">National Mythology Exam</DropdownItem>,
+              <DropdownItem to="/exams" key="4">National Classical Etymology Exam</DropdownItem>,
+              <DropdownItem to="/exams" key="5">National Roman Civilaziation Exam</DropdownItem>,
+              <DropdownItem to="/exams" key="6">National Latin Vocabulary Exam</DropdownItem>
+            ]}>
+              Exams
           </NavItem>
           <NavItem 
             to="/more"
-            subItems={[
-              <NavSubItem to="/" key="1">Resources</NavSubItem>, 
-              <NavSubItem to="/" key="2">Book Reviews</NavSubItem>
+            dropdown={[
+              <DropdownItem to="/more" key="1">Resources</DropdownItem>, 
+              <DropdownItem to="/more" key="2">Book Reviews</DropdownItem>
             ]} 
-            subItemsWidth="112px"
-            right
-          >
-            More
+            right>
+              More
           </NavItem>
         </nav>
       </div>

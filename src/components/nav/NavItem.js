@@ -1,28 +1,52 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React, { useState } from 'react';
+import { useHistory } from 'react-router-dom';
 import ArrowIcon from '../icon/ArrowIcon';
 import styles from './NavItem.module.scss';
 
-const NavItem = ({ to, subItems, subItemsWidth, right, children }) => {
+const Dropdown = ({ dropdown, right }) => {
+  const setDropdownDirection = () => {
+    if (right) return { right: '-15px' };
+    else return { left: '-15px' };
+  };
+
+  return (
+    <ul 
+      className={styles.dropdown}
+      style={setDropdownDirection()}>
+        {dropdown}
+    </ul>
+  );
+};
+
+const NavItem = ({ to, dropdown, right, children }) => {
+  const [isDropdown, setDropdown] = useState(false);
+  const history = useHistory();
+
+  const handleMouseEnter = () => {
+    setDropdown(true);
+  };
+
+  const handleMouseLeave = () => {
+    setDropdown(false);
+  };
+
+  const handleMouseDown = () => {
+    history.push(to);
+    setTimeout(setDropdown(false), 500);
+  };
+
   return (  
-    <div className={styles.wrap}>
-      <Link 
-        to={to} 
-        className={styles.item}
-      >
-        {children}
-        {subItems && ' '}
-        {subItems && <ArrowIcon size="10" color="#b0b0b0" />}
-      </Link>
-      {subItems && <ul 
-        className={styles.dropdown}
-        style={{ 
-          width: subItemsWidth,
-          right: right ? 0 : undefined
-        }}
-      >
-        {subItems}
-      </ul>}    
+    <div 
+      className={styles.wrap} 
+      onMouseEnter={handleMouseEnter} 
+      onMouseLeave={handleMouseLeave}
+      onMouseDown={handleMouseDown}>
+        <p className={styles.item}>
+          {children}
+          {dropdown && ' '}
+          {dropdown && <ArrowIcon size="10" color="#b0b0b0" />}
+        </p>
+        {dropdown && isDropdown && <Dropdown dropdown={dropdown} right={right} />}    
     </div>
   );
 }
