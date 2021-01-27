@@ -1,17 +1,22 @@
 const privateCourses = [
   {
     id: 1,
-    title: 'GPA SAT II AP',
+    title: 'GPA AP GCSE A/AS',
     to: '/'
   },
   {
     id: 2,
-    title: 'LLPSI',
+    title: 'Latin',
     to: '/'
   },
   {
     id: 3,
-    title: 'Athenaze',
+    title: 'Greek',
+    to: '/'
+  },
+  {
+    id: 4,
+    title: 'Class On Demand',
     to: '/'
   }
 ];

@@ -10,7 +10,7 @@ import Image from '../Courses/Image';
 import Apply from '../Courses/Apply';
 import styles from './Courses.module.scss';
 
-import { regularCourse, privateCourse } from '../../fakeData';
+import { regularCourse, privateCourse, exams } from '../../fakeData';
 
 const Courses = ({ category }) => {
   const [nav, setNav] = useState('');
@@ -23,10 +23,14 @@ const Courses = ({ category }) => {
       setIndex(0);
       dispatch(setCourse(regularCourse));
       setNav('');
-    } else if (category = 'private') {
+    } else if (category === 'private') {
       setIndex(0);
       dispatch(setCourse(privateCourse));
       setNav('private');
+    } else if (category === 'exams') {
+      setIndex(0);
+      dispatch(setCourse(exams));
+      setNav('exams');
     }
   }, [category]);
 
@@ -45,9 +49,11 @@ const Courses = ({ category }) => {
     return items;
   };
 
-  const showItems = (item, i) => {
+  const showItems = (item, i, isId = true) => {
     if (item.type === 'title') return (
-      <Title key={i} id={item.value}>{item.value}</Title>
+      <Title key={i} id={isId ? item.value : undefined}>
+        {item.value}
+      </Title>
     );
     else if (item.type === 'subTitle') return (
       <Title key={i} small>{item.value}</Title>
@@ -56,7 +62,7 @@ const Courses = ({ category }) => {
       <Text key={i}>{applySpacesAndLineBreaksToText(item.value)}</Text>
     );
     else if (item.type === 'image') return (
-      <Image key={i} src={item.value} width={item.width} align={item.align} />
+      <Image key={i} src={item.url} width={item.width} align={item.align} />
     );
     else if (item.type === 'bumper') return (
       <div key={i} style={{ height: item.value }} />
@@ -68,7 +74,7 @@ const Courses = ({ category }) => {
       <img src={data.image} alt="regular" width="100%" style={{ display: 'block' }}/>
       <PageFrame>
         <Title main>{data.title}</Title>
-        {data.items.map((item, i) => showItems(item, i))}
+        {data.items.map((item, i) => showItems(item, i, false))}
         <Contents 
           items={data.courses} 
           index={index} 

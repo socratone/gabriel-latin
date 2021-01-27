@@ -34,15 +34,17 @@ const Nav = () => {
           <NavItem 
             to="/courses/private"
             subItems={[
-              <NavSubItem to="/courses/private" key="1">GPA SAT II AP</NavSubItem>, 
-              <NavSubItem to="/courses/private" key="2">LLPSI</NavSubItem>,
-              <NavSubItem to="/courses/private" key="3">Athenaze</NavSubItem>
+              <NavSubItem to="/courses/private" key="1">GPA AP GCSE A/AS</NavSubItem>, 
+              <NavSubItem to="/courses/private" key="2">Latin</NavSubItem>,
+              <NavSubItem to="/courses/private" key="3">Greek</NavSubItem>,
+              <NavSubItem to="/courses/private" key="4">Class On Demand</NavSubItem>
             ]}
-            subItemsWidth="112px"
+            subItemsWidth="150px"
           >
             Private Courses
           </NavItem>
           <NavItem 
+            right
             to="/exams"
             subItems={[
               <NavSubItem to="/" key="1">National Latin Exam</NavSubItem>, 

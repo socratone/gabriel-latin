@@ -5,7 +5,6 @@ import {
   Route
 } from "react-router-dom";
 import Nav from './nav/Nav';
-import Exams from './pages/Exams';
 import Home from './pages/Home';
 import WhyLatin from './pages/WhyLatin';
 import About from './pages/About';
@@ -51,7 +50,7 @@ const Routes = () => {
             <Courses category="private" />
           </Route>
           <Route path="/exams">
-            <Exams />
+            <Courses category="exams" />
           </Route>
           <Route path="/more">
             <More />

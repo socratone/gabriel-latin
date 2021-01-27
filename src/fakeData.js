@@ -8,7 +8,7 @@ const regularCourse = {
     {
       type: 'text',
       value: `기간 : 2021년 3월 1일 ~ 5월 29일, 13주
-과목 : Latin 1 - 1`
+과목 : Latin 1 - 1 Now open`
     },
     {
       type: 'title',
@@ -34,7 +34,7 @@ const regularCourse = {
     고대 그리스어는 개인과정만 가능하며, 정규과정은 2022년에 개설될 예정입니다.`
     },
   ],
-  image: 'https://gabriel-latin.s3.ap-northeast-2.amazonaws.com/assets/regular-courses/regular-courses-head.jpg',
+  image: 'https://gabriel-latin.s3.ap-northeast-2.amazonaws.com/assets/regular-courses/regular-head.jpg',
   courses: [
     {
       tabTitle: 'Latin 1 - 1',
@@ -122,54 +122,7 @@ const regularCourse = {
         {
           type: 'title',
           value: 'Latin (part 2):'
-        },
-        {
-          type: 'subTitle',
-          value: `대상`
-        },
-        {
-          type: 'text',
-          value: `라틴어를 중급으로 공부해보고 싶은 분
-라틴어를 공부해 본 적은 있지만 근본부터 깊게 공부하고 싶은 분
-라틴어를 가르치는 선생님이지만 라틴어의 형태론, 통사론, 어휘 교수법을 Natural Method로 익히고 싶은 분`
-        },
-        {
-          type: 'subTitle',
-          value: `방법`
-        },
-        {
-          type: 'text',
-          value: `임시글 임시글 임시글 임시글 임시글 임시글 임시글 임시글 임시글 임시글 임시글 임시글 임시글 임시글 임시글 임시글 임시글 임시글 `
-        },
-        {
-          type: 'subTitle',
-          value: `내용`
-        },
-        {
-          type: 'text',
-          value: `임시글 임시글 임시글 임시글 임시글 임시글 임시글 임시글 임시글 임시글 임시글 임시글 임시글 임시글 임시글 `
-        },
-        {
-          type: 'subTitle',
-          value: `교재`
-        },
-        {
-          type: 'text',
-          value: `H. Ørberg, Lingua Latina per se illustrata: pars I: Familia Romana`
-        },
-        {
-          type: 'subTitle',
-          value: `주의`
-        },
-        {
-          type: 'text',
-          value: `최소 10명이 되어야 개강됩니다.
-최소인원이 충족되지 않아 개강되지 않을 시, 수업료를 100% 환불해드립니다.`
-        },
-        {
-          type: 'text',
-          value: `수업 참가를 원하시는 분은 아래의 양식을 채워 제출해주세요. 3일 이내로 결제정보를 담은 확인 메일을 보내드립니다.`
-        },
+        }
       ]
     },
     {
@@ -186,69 +139,22 @@ const regularCourse = {
         {
           type: 'title',
           value: 'Latin (part 3):'
-        },
-        {
-          type: 'subTitle',
-          value: `대상`
-        },
-        {
-          type: 'text',
-          value: `라틴어를 중급으로 공부해보고 싶은 분
-라틴어를 공부해 본 적은 있지만 근본부터 깊게 공부하고 싶은 분
-라틴어를 가르치는 선생님이지만 라틴어의 형태론, 통사론, 어휘 교수법을 Natural Method로 익히고 싶은 분`
-        },
-        {
-          type: 'subTitle',
-          value: `방법`
-        },
-        {
-          type: 'text',
-          value: `임시글 임시글 임시글 임시글 임시글 임시글 임시글 임시글 임시글 임시글 임시글 임시글 임시글 임시글 임시글 임시글 임시글 임시글 `
-        },
-        {
-          type: 'subTitle',
-          value: `내용`
-        },
-        {
-          type: 'text',
-          value: `임시글 임시글 임시글 임시글 임시글 임시글 임시글 임시글 임시글 임시글 임시글 임시글 임시글 임시글 임시글 `
-        },
-        {
-          type: 'subTitle',
-          value: `교재`
-        },
-        {
-          type: 'text',
-          value: `H. Ørberg, Lingua Latina per se illustrata: pars I: Familia Romana`
-        },
-        {
-          type: 'subTitle',
-          value: `주의`
-        },
-        {
-          type: 'text',
-          value: `최소 10명이 되어야 개강됩니다.
-최소인원이 충족되지 않아 개강되지 않을 시, 수업료를 100% 환불해드립니다.`
-        },
-        {
-          type: 'text',
-          value: `수업 참가를 원하시는 분은 아래의 양식을 채워 제출해주세요. 3일 이내로 결제정보를 담은 확인 메일을 보내드립니다.`
-        },
+        }
       ]
     },
   ],
 };
 
 const privateCourse = {
-  title: '2021년 Private Course',
+  // title: '2021년 Private Course',
   items: [
   ],
-  image: 'https://gabriel-latin.s3.ap-northeast-2.amazonaws.com/assets/regular-courses/regular-courses-head.jpg',
+  image: 'https://gabriel-latin.s3.ap-northeast-2.amazonaws.com/assets/private-courses/private-head.jpg',
   courses: [
     {
-      tabTitle: 'GPA & Exams: GPA',
+      tabTitle: 'GPA',
       image: 'https://gabriel-latin.s3.ap-northeast-2.amazonaws.com/assets/private-courses/gpa-sat-ii.jpg',
-      title: 'GPA & Exams: GPA',
+      title: 'GPA',
       description: `국내 유일의 체계적인 SAT II 과정으로
 ​최고점을 받으세요!`,
       isOpen: false,
@@ -259,7 +165,7 @@ const privateCourse = {
         },
         {
           type: 'title',
-          value: 'GPA & Exams: GPA'
+          value: 'GPA'
         },
       ]
     },
@@ -299,48 +205,9 @@ const privateCourse = {
       ]
     },
     {
-      tabTitle: 'Latin: Beginner',
-      image: 'https://gabriel-latin.s3.ap-northeast-2.amazonaws.com/assets/private-courses/beginner.jpg',
-      title: 'Latin: Beginner',
-      description: `​라틴어로 듣고, 말하고, 활동하는 경험을 체험해보세요!
-
-로마 문화를 라틴어로 읽고 익힙니다.`,
-      isOpen: false,
-      items: [
-        {
-          type: 'bumper',
-          value: '30px'
-        },
-        {
-          type: 'title',
-          value: 'Latin: Beginner'
-        },
-      ]
-    },
-    {
-      tabTitle: 'Intermediate',
-      image: 'https://gabriel-latin.s3.ap-northeast-2.amazonaws.com/assets/private-courses/intermediate.jpg',
-      title: 'Latin: Intermediate',
-      description: `LLPSI 방법론을 이용하여
-더욱 다양한 단어, 표현들을 익혀보세요!
-
-로마신화와 성경을 라틴어로 읽고 익힙니다.`,
-      isOpen: false,
-      items: [
-        {
-          type: 'bumper',
-          value: '30px'
-        },
-        {
-          type: 'title',
-          value: 'Latin: Intermediate'
-        },
-      ]
-    },
-    {
-      tabTitle: 'Advanced',
+      tabTitle: 'Classical Latin',
       image: 'https://gabriel-latin.s3.ap-northeast-2.amazonaws.com/assets/private-courses/advanced.jpg',
-      title: 'Latin: Advanced',
+      title: 'Classical Latin',
       description: `LLPSI 방법론을 이용하여
 원문에 한걸음 더 가까이 가보세요!​
       
@@ -353,14 +220,14 @@ const privateCourse = {
         },
         {
           type: 'title',
-          value: 'Latin: Advanced'
+          value: 'Classical Latin'
         },
       ]
     },
     {
-      tabTitle: 'Expert',
+      tabTitle: ' Medieval/Church Latin',
       image: 'https://gabriel-latin.s3.ap-northeast-2.amazonaws.com/assets/private-courses/expert.jpg',
-      title: 'Latin: Expert',
+      title: 'Medieval/Church Latin',
       description: `LLPSI 방법론을 이용하여
 라틴 문학의 정수를 느껴보세요!
       
@@ -373,14 +240,14 @@ const privateCourse = {
         },
         {
           type: 'title',
-          value: 'Latin: Expert'
+          value: 'Medieval/Church Latin'
         },
       ]
     },
     {
-      tabTitle: 'Greek: Beginner',
+      tabTitle: 'Ancient Greek',
       image: 'https://gabriel-latin.s3.ap-northeast-2.amazonaws.com/assets/private-courses/beginner-greek.jpg',
-      title: 'Greek: Beginner',
+      title: 'Ancient Greek',
       description: `LLPSI 방법론을 이용하여
 고대 그리스어를 경험해보세요! 
       
@@ -393,18 +260,15 @@ const privateCourse = {
         },
         {
           type: 'title',
-          value: 'Greek: Beginner'
+          value: 'Ancient Greek'
         },
       ]
     },
     {
-      tabTitle: 'Intermediate',
-      image: 'https://gabriel-latin.s3.ap-northeast-2.amazonaws.com/assets/private-courses/intermediate-greek.jpg',
-      title: 'Greek: Intermediate',
-      description: `LLPSI 방법론을 이용하여
-​원문에 한걸음 더 가까이 가보세요!
-      
-​그리스 역사와 문학을 그리스어로 읽습니다.`,
+      tabTitle: 'Koine Greek',
+      image: '',
+      title: 'Koine Greek',
+      description: ``,
       isOpen: false,
       items: [
         {
@@ -413,18 +277,15 @@ const privateCourse = {
         },
         {
           type: 'title',
-          value: 'Greek: Intermediate'
+          value: 'Koine Greek'
         },
       ]
     },
     {
-      tabTitle: 'Advanced',
-      image: 'https://gabriel-latin.s3.ap-northeast-2.amazonaws.com/assets/private-courses/advanced-greek.jpg',
-      title: 'Greek: Advanced',
-      description: `LLPSI 방법론을 이용하여
-개작과 원문을 읽어보세요!
-      
-​문학 작품을 그리스어로 읽습니다.`,
+      tabTitle: 'Class On Demand',
+      image: '',
+      title: 'Class On Demand',
+      description: ``,
       isOpen: false,
       items: [
         {
@@ -433,7 +294,195 @@ const privateCourse = {
         },
         {
           type: 'title',
-          value: 'Greek: Advanced'
+          value: 'Class On Demand'
+        },
+      ]
+    },
+    {
+      tabTitle: '번역, 녹음, 영화관련 의뢰',
+      image: '',
+      title: '번역, 녹음, 영화관련 의뢰',
+      description: ``,
+      isOpen: false,
+      items: [
+        {
+          type: 'bumper',
+          value: '30px'
+        },
+        {
+          type: 'title',
+          value: '번역, 녹음, 영화관련 의뢰'
+        },
+      ]
+    },
+  ],
+};
+
+const exams = {
+  title: '2021년 ACL & NJCL Exams',
+  items: [
+    {
+      type: 'image',
+      value: 'exams-title',
+      url: 'https://gabriel-latin.s3.ap-northeast-2.amazonaws.com/assets/exams/exams-title.png',
+      width: '500px'
+    },
+    {
+      type: 'title',
+      value: 'National Latin Exam'
+    },
+    {
+      type: 'text',
+      value: `등록기간 : ~ 2월 1일
+시험기간 : 2월 22일 ~ 3월 12일`
+    },
+    {
+      type: 'title',
+      value: 'National Greek Exam'
+    },
+    {
+      type: 'text',
+      value: `등록기간 : ~ 2월 1일
+시험기간 : 2월 22일 ~ 3월 12일`
+    },
+    {
+      type: 'title',
+      value: 'National Mythology Exam'
+    },
+    {
+      type: 'text',
+      value: `등록기간 : ~ 1월 15일
+시험기간 : 2월 22일 ~ 3월 5일`
+    },
+    {
+      type: 'title',
+      value: 'National Classical Etymology Exam'
+    },
+    {
+      type: 'text',
+      value: `등록기간 : 미정
+시험기간 : 미정`
+    },
+    {
+      type: 'title',
+      value: 'National Roman Civilization Exam'
+    },
+    {
+      type: 'text',
+      value: `등록기간 : ~ 1월 27일
+시험기간 : 2월 1일 ~ 3월 5일`
+    },
+    {
+      type: 'title',
+      value: 'National Latin Vocabulary Exam'
+    },
+    {
+      type: 'text',
+      value: `등록기간 : ~ 1월 27일
+시험기간 : 2월 1일 ~ 3월 5일`
+    },
+  ],
+  image: 'https://gabriel-latin.s3.ap-northeast-2.amazonaws.com/assets/exams/exams-head.jpg',
+  courses: [
+    {
+      tabTitle: 'NLE',
+      image: 'https://gabriel-latin.s3.ap-northeast-2.amazonaws.com/assets/exams/NLE.jpg',
+      title: 'National Latin Exam',
+      description: ``,
+      isOpen: false,
+      items: [
+        {
+          type: 'bumper',
+          value: '30px'
+        },
+        {
+          type: 'title',
+          value: 'National Latin Exam'
+        },
+      ]
+    },
+    {
+      tabTitle: 'NGE',
+      image: 'https://gabriel-latin.s3.ap-northeast-2.amazonaws.com/assets/exams/NGE.jpg',
+      title: 'National Greek Exam',
+      description: ``,
+      isOpen: false,
+      items: [
+        {
+          type: 'bumper',
+          value: '30px'
+        },
+        {
+          type: 'title',
+          value: 'National Greek Exam'
+        },
+      ]
+    },
+    {
+      tabTitle: 'NME',
+      image: 'https://gabriel-latin.s3.ap-northeast-2.amazonaws.com/assets/exams/NME.png',
+      title: 'National Mythology Exam',
+      description: ``,
+      isOpen: false,
+      items: [
+        {
+          type: 'bumper',
+          value: '30px'
+        },
+        {
+          type: 'title',
+          value: 'National Mythology Exam'
+        },
+      ]
+    },
+    {
+      tabTitle: 'NCEE',
+      image: 'https://gabriel-latin.s3.ap-northeast-2.amazonaws.com/assets/exams/NCEE.jpg',
+      title: 'National Classical Etymology Exam',
+      description: ``,
+      isOpen: false,
+      items: [
+        {
+          type: 'bumper',
+          value: '30px'
+        },
+        {
+          type: 'title',
+          value: 'National Classical Etymology Exam'
+        },
+      ]
+    },
+    {
+      tabTitle: 'NRCE',
+      image: 'https://gabriel-latin.s3.ap-northeast-2.amazonaws.com/assets/exams/NRCE.jpg',
+      title: 'National Roman Civilization Exam',
+      description: ``,
+      isOpen: false,
+      items: [
+        {
+          type: 'bumper',
+          value: '30px'
+        },
+        {
+          type: 'title',
+          value: 'National Roman Civilization Exam'
+        },
+      ]
+    },
+    {
+      tabTitle: 'NLVE',
+      image: 'https://gabriel-latin.s3.ap-northeast-2.amazonaws.com/assets/exams/NLVE.png',
+      title: 'National Latin Vocabulary Exam',
+      description: ``,
+      isOpen: false,
+      items: [
+        {
+          type: 'bumper',
+          value: '30px'
+        },
+        {
+          type: 'title',
+          value: 'National Latin Vocabulary Exam'
         },
       ]
     },
@@ -442,5 +491,6 @@ const privateCourse = {
 
 export {
   regularCourse,
-  privateCourse
+  privateCourse,
+  exams
 }

@@ -5,6 +5,7 @@ import styles from './ContentsNav.module.scss';
 const ContentsNav = ({ items, index, changeIndex, nav }) => {
   if (nav === 'private') return (
     <>
+      <h4 className={styles.category}>유학생들을 위한 과정 :</h4>
       <nav className={styles.overNav}>
         <TabItem onClick={() => changeIndex(0)} selected={0 === index}>
           {items[0].tabTitle}
@@ -16,6 +17,7 @@ const ContentsNav = ({ items, index, changeIndex, nav }) => {
           {items[2].tabTitle}
         </TabItem>
       </nav>
+      <h4 className={styles.category}>국내학생 및 일반인, 성인들을 위한 과정 :</h4>
       <nav className={styles.overNav}>
         <TabItem onClick={() => changeIndex(3)} selected={3 === index}>
           {items[3].tabTitle}
@@ -30,15 +32,13 @@ const ContentsNav = ({ items, index, changeIndex, nav }) => {
           {items[6].tabTitle}
         </TabItem>
       </nav>
+      <h4 className={styles.category}>주문형 강좌 및 기타 :</h4>
       <nav className={styles.nav}>
         <TabItem onClick={() => changeIndex(7)} selected={7 === index}>
           {items[7].tabTitle}
         </TabItem>
         <TabItem onClick={() => changeIndex(8)} selected={8 === index}>
           {items[8].tabTitle}
-        </TabItem>
-        <TabItem onClick={() => changeIndex(9)} selected={9 === index}>
-          {items[9].tabTitle}
         </TabItem>
       </nav>
     </>

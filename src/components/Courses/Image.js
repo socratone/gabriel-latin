@@ -3,7 +3,7 @@ import styled, { css } from 'styled-components';
 
 const Wrap = styled.div`
   display: flex;
-  margin: 1rem 0;
+  margin: 32px 0 16px 0;
 `;
 
 const Img = styled.img`

@@ -9,12 +9,6 @@ const Home = () => {
       <HomeImage />
       <PageFrame>
         <p>안녕하세요!</p>
-        <p>안녕하세요!</p>
-        <p>안녕하세요!</p>
-        <p>안녕하세요!</p>
-        <p>안녕하세요!</p>
-        <p>안녕하세요!</p>
-        <p>안녕하세요!</p>
       </PageFrame>
     </main>
   );
