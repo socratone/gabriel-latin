@@ -6,7 +6,6 @@ import {
 } from "react-router-dom";
 import Nav from './nav/Nav';
 import Exams from './pages/Exams';
-import Fnq from './pages/Fnq';
 import Home from './pages/Home';
 import WhyLatin from './pages/WhyLatin';
 import About from './pages/About';
@@ -53,9 +52,6 @@ const Routes = () => {
           </Route>
           <Route path="/exams">
             <Exams />
-          </Route>
-          <Route path="/fnq">
-            <Fnq />
           </Route>
           <Route path="/more">
             <More />

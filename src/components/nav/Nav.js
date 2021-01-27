@@ -56,9 +56,6 @@ const Nav = () => {
           >
             Exams
           </NavItem>
-          <NavItem to="/fnq">
-            F&Q
-          </NavItem>
           <NavItem 
             to="/more"
             subItems={[

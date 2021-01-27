@@ -49,9 +49,6 @@ const RightNav = () => {
         <RightNavItem to="/exams" subItems={exams}>
           Exams
         </RightNavItem>
-        <RightNavItem to="/fnq">
-          F&Q
-        </RightNavItem>
         <RightNavItem to="/more" subItems={more}>
           More
         </RightNavItem>
