@@ -35,7 +35,7 @@ const Routes = () => {
   return (  
     <Router>
       <Nav />
-      <div className={styles.mainWrap} style={{ height }}>
+      <div className={styles.mainWrap} style={{ height }} id="scroll">
         <Switch>
           <Route path="/whylatin">
             <WhyLatin />

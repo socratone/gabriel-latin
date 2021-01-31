@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { setCourse } from '../../store/reducers/course';
 import applySpacesAndLineBreaksToText from '../../helper/applySpacesAndLineBreaksToText';
@@ -32,6 +32,11 @@ const Courses = ({ category }) => {
       dispatch(setCourse(exams));
       setNav('exams');
     }
+  }, [category]);
+
+  useEffect(() => {
+    const scroll = document.getElementById('scroll');
+    if (scroll) scroll.scrollTo(0, 0);
   }, [category]);
 
   const changeIndex = (index) => {
