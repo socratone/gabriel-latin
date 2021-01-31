@@ -42,7 +42,7 @@ const regularCourse = {
     고대 그리스어는 개인과정만 가능하며, 정규과정은 2022년에 개설될 예정입니다.`
     },
   ],
-  image: 'https://gabriel-latin.s3.ap-northeast-2.amazonaws.com/assets/regular-courses/regular-head.jpg',
+  headImage: 'https://gabriel-latin.s3.ap-northeast-2.amazonaws.com/assets/regular-courses/regular-head.jpg',
   courses: [
     {
       tabTitle: 'Latin 1 - 1',
@@ -157,7 +157,7 @@ const privateCourse = {
   // title: '2021년 Private Course',
   items: [
   ],
-  image: 'https://gabriel-latin.s3.ap-northeast-2.amazonaws.com/assets/private-courses/private-head.jpg',
+  headImage: 'https://gabriel-latin.s3.ap-northeast-2.amazonaws.com/assets/private-courses/private-head.jpg',
   courses: [
     {
       tabTitle: 'GPA',
@@ -404,7 +404,7 @@ const exams = {
       width: '500px'
     }
   ],
-  image: 'https://gabriel-latin.s3.ap-northeast-2.amazonaws.com/assets/exams/exams-head.jpg',
+  headImage: 'https://gabriel-latin.s3.ap-northeast-2.amazonaws.com/assets/exams/exams-head.jpg',
   courses: [
     {
       tabTitle: 'NLE',
