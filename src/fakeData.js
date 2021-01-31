@@ -328,6 +328,16 @@ const privateCourse = {
 
 const exams = {
   title: '2021년 ACL & NJCL Exams',
+  images: [
+    {
+      type: 'image',
+      url: 'https://gabriel-latin.s3.ap-northeast-2.amazonaws.com/assets/exams/exams-title-1.png'
+    },
+    {
+      type: 'image',
+      url: 'https://gabriel-latin.s3.ap-northeast-2.amazonaws.com/assets/exams/exams-title-2.png'
+    }
+  ],
   grid: [
     [
       {
@@ -396,14 +406,7 @@ const exams = {
       }
     ]
   ],
-  items: [
-    {
-      type: 'image',
-      value: 'exams-title',
-      url: 'https://gabriel-latin.s3.ap-northeast-2.amazonaws.com/assets/exams/exams-title.png',
-      width: '500px'
-    }
-  ],
+  items: [],
   headImage: 'https://gabriel-latin.s3.ap-northeast-2.amazonaws.com/assets/exams/exams-head.jpg',
   courses: [
     {

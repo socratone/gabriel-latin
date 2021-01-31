@@ -2,6 +2,19 @@
   padding-bottom: 100px;
 }
 
+.imagesWrap {
+  display: flex;
+  justify-content: center;
+
+  div {
+    margin-right: 80px;
+  }
+  
+  div:last-child {
+    margin-right: 0;
+  }
+}
+
 .gridWrap {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
