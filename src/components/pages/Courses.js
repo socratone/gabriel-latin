@@ -69,11 +69,10 @@ const Courses = ({ category }) => {
     );
   };
 
-  const showGridItems = () => {
+  const showGridItems = grids => {
     let gridItems = [];
-    if (!data.grid) return [];
-    for (let i = 0; i < data.grid.length; i++) {
-      const items = data.grid[i];
+    for (let i = 0; i < grids.length; i++) {
+      const items = grids[i];
       const childrens = [];
       items.forEach((item, i) => {
         const child = showItem(item, i, false);
@@ -88,11 +87,11 @@ const Courses = ({ category }) => {
     <main className={styles.courses}>
       <img src={data.headImage} alt="regular" width="100%" style={{ display: 'block' }}/>
       <PageFrame>
-        <Title main removeBottom={Array.isArray(data.grid) || Array.isArray(data.images)}>{data.title}</Title>
-        <div className={styles.imagesWrap}>
-          {data.images && data.images.map((item, i) => showItem(item, i, false))}
-        </div>
-        <div className={styles.gridWrap}>{showGridItems()}</div>
+        {data.title && <Title main>{data.title}</Title>}
+        {data.images && <div className={styles.imagesWrap}>
+          {data.images.map((item, i) => showItem(item, i, false))}
+        </div>}
+        {data.grids && <div className={styles.gridWrap}>{showGridItems(data.grids)}</div>}
         {data.items.map((item, i) => showItem(item, i, false))}
         <Contents 
           items={data.courses} 

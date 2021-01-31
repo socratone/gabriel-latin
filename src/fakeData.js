@@ -1,6 +1,6 @@
 const regularCourse = {
   title: '2021년 정규 과정',
-  grid: [
+  grids: [
     [
       {
         type: 'title',
@@ -338,7 +338,7 @@ const exams = {
       url: 'https://gabriel-latin.s3.ap-northeast-2.amazonaws.com/assets/exams/exams-title-2.png'
     }
   ],
-  grid: [
+  grids: [
     [
       {
         type: 'title',
