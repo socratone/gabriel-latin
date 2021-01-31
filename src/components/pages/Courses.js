@@ -49,7 +49,7 @@ const Courses = ({ category }) => {
     return items;
   };
 
-  const showItems = (item, i, isId = true) => {
+  const showItem = (item, i, isId = true) => {
     if (item.type === 'title') return (
       <Title key={i} id={isId ? item.value : undefined}>
         {item.value}
@@ -76,7 +76,7 @@ const Courses = ({ category }) => {
       const items = data.grid[i];
       const childrens = [];
       items.forEach((item, i) => {
-        const child = showItems(item, i, false);
+        const child = showItem(item, i, false);
         childrens.push(child);
       });
       gridItems.push(<div key={i}>{childrens}</div>);
@@ -90,13 +90,13 @@ const Courses = ({ category }) => {
       <PageFrame>
         <Title main>{data.title}</Title>
         <div className={styles.gridWrap}>{showGridItems()}</div>
-        {data.items.map((item, i) => showItems(item, i, false))}
+        {data.items.map((item, i) => showItem(item, i, false))}
         <Contents 
           items={data.courses} 
           index={index} 
           changeIndex={changeIndex} 
           nav={nav} />
-        {getCoursesItems().map((item, i) => showItems(item, i))}
+        {getCoursesItems().map((item, i) => showItem(item, i))}
         <Apply />
       </PageFrame>
     </main>
