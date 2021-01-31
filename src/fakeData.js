@@ -445,7 +445,7 @@ const exams = {
     },
     {
       tabTitle: 'NME',
-      image: 'https://gabriel-latin.s3.ap-northeast-2.amazonaws.com/assets/exams/NME.png',
+      image: 'https://gabriel-latin.s3.ap-northeast-2.amazonaws.com/assets/exams/NME.jpg',
       title: 'National Mythology Exam',
       description: ``,
       isOpen: false,
@@ -496,7 +496,7 @@ const exams = {
     },
     {
       tabTitle: 'NLVE',
-      image: 'https://gabriel-latin.s3.ap-northeast-2.amazonaws.com/assets/exams/NLVE.png',
+      image: 'https://gabriel-latin.s3.ap-northeast-2.amazonaws.com/assets/exams/NLVE.jpg',
       title: 'National Latin Vocabulary Exam',
       description: ``,
       isOpen: false,
