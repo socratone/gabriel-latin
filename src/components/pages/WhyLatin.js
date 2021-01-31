@@ -10,6 +10,7 @@ const WhyLatin = () => {
         width="100%" 
         style={{ display: 'block' }}/>
       <PageFrame>
+        Why Latin
       </PageFrame>
     </main>
   );

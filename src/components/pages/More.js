@@ -5,7 +5,7 @@ const More = () => {
   return (  
     <PageFrame>
       <main>
-        모어모어
+        More
       </main>
     </PageFrame>
   );
