@@ -67,13 +67,29 @@ const Courses = ({ category }) => {
     else if (item.type === 'bumper') return (
       <div key={i} style={{ height: item.value }} />
     );
-  }
+  };
+
+  const showGridItems = () => {
+    let gridItems = [];
+    if (!data.grid) return [];
+    for (let i = 0; i < data.grid.length; i++) {
+      const items = data.grid[i];
+      const childrens = [];
+      items.forEach((item, i) => {
+        const child = showItems(item, i, false);
+        childrens.push(child);
+      });
+      gridItems.push(<div key={i}>{childrens}</div>);
+    }
+    return gridItems;
+  };
 
   return (  
     <main className={styles.courses}>
       <img src={data.image} alt="regular" width="100%" style={{ display: 'block' }}/>
       <PageFrame>
         <Title main>{data.title}</Title>
+        <div className={styles.gridWrap}>{showGridItems()}</div>
         {data.items.map((item, i) => showItems(item, i, false))}
         <Contents 
           items={data.courses} 

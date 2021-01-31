@@ -1,33 +1,41 @@
 const regularCourse = {
   title: '2021년 정규 과정',
-  items: [
-    {
-      type: 'title',
-      value: 'Spring Term'
-    },
-    {
-      type: 'text',
-      value: `기간 : 2021년 3월 1일 ~ 5월 29일, 13주
+  grid: [
+    [
+      {
+        type: 'title',
+        value: 'Spring Term'
+      },
+      {
+        type: 'text',
+        value: `기간 : 2021년 3월 1일 ~ 5월 29일, 13주
 과목 : Latin 1 - 1 Now open`
-    },
-    {
-      type: 'title',
-      value: 'Summer Term'
-    },
-    {
-      type: 'text',
-      value: `기간 : 2021년 6월 28일 ~ 10월 2일, 13주
+      }
+    ],
+    [
+      {
+        type: 'title',
+        value: 'Summer Term'
+      },
+      {
+        type: 'text',
+        value: `기간 : 2021년 6월 28일 ~ 10월 2일, 13주
 과목 : Latin 1 - 2`
-    },
-    {
-      type: 'title',
-      value: 'Fall & Winter Term'
-    },
-    {
-      type: 'text',
-      value: `기간 : 2021년 10월 25일 ~ 2022년 2월 11일, 13주
-과목 : Latin 1 - 3  `
-    },
+      }
+    ],
+    [
+      {
+        type: 'title',
+        value: 'Fall & Winter Term'
+      },
+      {
+        type: 'text',
+        value: `기간 : 2021년 10월 25일 ~ 2022년 2월 11일, 13주
+과목 : Latin 1 - 3`
+      }
+    ]
+  ],
+  items: [
     {
       type: 'text',
       value: `** 2021년 정규과정에는 라틴어만 개설됩니다.
