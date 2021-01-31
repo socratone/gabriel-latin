@@ -328,67 +328,81 @@ const privateCourse = {
 
 const exams = {
   title: '2021년 ACL & NJCL Exams',
+  grid: [
+    [
+      {
+        type: 'title',
+        value: 'National Latin Exam'
+      },
+      {
+        type: 'text',
+        value: `등록기간 : ~ 2월 1일
+시험기간 : 2월 22일 ~ 3월 12일`
+      }
+    ],
+    [
+      {
+        type: 'title',
+        value: 'National Greek Exam'
+      },
+      {
+        type: 'text',
+        value: `등록기간 : ~ 2월 1일
+시험기간 : 2월 22일 ~ 3월 12일`
+      }
+    ],
+    [
+      {
+        type: 'title',
+        value: 'National Mythology Exam'
+      },
+      {
+        type: 'text',
+        value: `등록기간 : ~ 1월 15일
+시험기간 : 2월 22일 ~ 3월 5일`
+      }
+    ],
+    [
+      {
+        type: 'title',
+        value: 'National Classical Etymology'
+      },
+      {
+        type: 'text',
+        value: `등록기간 : 미정
+시험기간 : 미정`
+      }
+    ],
+    [
+      {
+        type: 'title',
+        value: 'National Roman Civilization'
+      },
+      {
+        type: 'text',
+        value: `등록기간 : ~ 1월 27일
+시험기간 : 2월 1일 ~ 3월 5일`
+      }
+    ],
+    [
+      {
+        type: 'title',
+        value: 'National Latin Vocabulary'
+      },
+      {
+        type: 'text',
+        value: `등록기간 : ~ 1월 27일
+시험기간 : 2월 1일 ~ 3월 5일`
+      }
+    ]
+  ],
   items: [
     {
       type: 'image',
       value: 'exams-title',
       url: 'https://gabriel-latin.s3.ap-northeast-2.amazonaws.com/assets/exams/exams-title.png',
       width: '500px'
-    },
-    {
-      type: 'title',
-      value: 'National Latin Exam'
-    },
-    {
-      type: 'text',
-      value: `등록기간 : ~ 2월 1일
-시험기간 : 2월 22일 ~ 3월 12일`
-    },
-    {
-      type: 'title',
-      value: 'National Greek Exam'
-    },
-    {
-      type: 'text',
-      value: `등록기간 : ~ 2월 1일
-시험기간 : 2월 22일 ~ 3월 12일`
-    },
-    {
-      type: 'title',
-      value: 'National Mythology Exam'
-    },
-    {
-      type: 'text',
-      value: `등록기간 : ~ 1월 15일
-시험기간 : 2월 22일 ~ 3월 5일`
-    },
-    {
-      type: 'title',
-      value: 'National Classical Etymology Exam'
-    },
-    {
-      type: 'text',
-      value: `등록기간 : 미정
-시험기간 : 미정`
-    },
-    {
-      type: 'title',
-      value: 'National Roman Civilization Exam'
-    },
-    {
-      type: 'text',
-      value: `등록기간 : ~ 1월 27일
-시험기간 : 2월 1일 ~ 3월 5일`
-    },
-    {
-      type: 'title',
-      value: 'National Latin Vocabulary Exam'
-    },
-    {
-      type: 'text',
-      value: `등록기간 : ~ 1월 27일
-시험기간 : 2월 1일 ~ 3월 5일`
-    },
+    }
   ],
   image: 'https://gabriel-latin.s3.ap-northeast-2.amazonaws.com/assets/exams/exams-head.jpg',
   courses: [

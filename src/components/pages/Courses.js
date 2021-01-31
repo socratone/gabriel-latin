@@ -88,7 +88,7 @@ const Courses = ({ category }) => {
     <main className={styles.courses}>
       <img src={data.image} alt="regular" width="100%" style={{ display: 'block' }}/>
       <PageFrame>
-        <Title main>{data.title}</Title>
+        <Title main removeBottom={Array.isArray(data.grid)}>{data.title}</Title>
         <div className={styles.gridWrap}>{showGridItems()}</div>
         {data.items.map((item, i) => showItem(item, i, false))}
         <Contents 

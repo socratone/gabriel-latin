@@ -28,6 +28,10 @@ const Title = styled.h3`
   ${props => props.section && css`
     margin-top: 80px;
   `}
+
+  ${props => props.removeBottom && css`
+    margin-bottom: 0;
+  `}
 `;
 
 export default Title;
